@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Furniture Planner</title>
+    <meta name="description" content="Design wardrobes, built-ins, RTV units and client projects with 2D, 3D, materials, estimates and professional PDF exports.">
+    <link rel="canonical" href="https://furnitureplannerapp.github.io/">
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Furniture Planner">
+    <meta property="og:title" content="Furniture Planner">
+    <meta property="og:description" content="Design wardrobes, built-ins, RTV units and client projects with 2D, 3D, materials, estimates and professional PDF exports.">
+    <meta property="og:url" content="https://furnitureplannerapp.github.io/">
+    <meta property="og:image" content="https://furnitureplannerapp.github.io/assets/app-icon-512.png">
+    <meta name="twitter:card" content="summary">
+</head>
+<body>
+    <main class="shell">
+        <nav class="nav" aria-label="Main navigation">
+            <a class="brand" href="./"><img class="mark" src="assets/app-icon-192.png" alt="" aria-hidden="true"><span>Furniture Planner</span></a>
+            <div class="links">
+                <a href="privacy-policy/">Privacy Policy</a>
+                <a href="terms-of-use/">Terms of Use</a>
+                <a href="support/">Support</a>
+            </div>
+        </nav>
+
+        <section class="hero">
+            <span class="pill">iOS furniture design workspace</span>
+            <h1>Furniture Planner</h1>
+            <p class="lead">Design wardrobes, built-ins, RTV units and client projects with 2D, 3D, materials, estimates and professional PDF exports.</p>
+            <div class="lang" aria-label="Language versions">
+                <a href="./" aria-current="page">English</a>
+                <a href="./pl/">Polski</a>
+                <a href="./de/">Deutsch</a>
+                <a href="./es/">Español</a>
+                <a href="./fr/">Français</a>
+            </div>
+        </section>
+
+        <section class="grid" aria-label="Key links">
+            <a class="card" href="privacy-policy/">
+                <strong>Privacy Policy</strong>
+                <p>How Furniture Planner stores projects, client data, diagnostics and optional iCloud sync data.</p>
+            </a>
+            <a class="card" href="terms-of-use/">
+                <strong>Terms of Use</strong>
+                <p>Usage terms, subscription information and production verification responsibilities.</p>
+            </a>
+            <a class="card" href="support/">
+                <strong>Support</strong>
+                <p>How to report issues and what diagnostic information can help us reproduce them.</p>
+            </a>
+        </section>
+
+        <footer class="footer">
+            Contact: <a href="mailto:furnitureplanner.contact@gmail.com">furnitureplanner.contact@gmail.com</a>
+        </footer>
+    <script>
+        (function () {
+            var lang = (navigator.language || navigator.userLanguage || '').toLowerCase().split('-')[0];
+            var target = { pl: 'pl/', de: 'de/', es: 'es/', fr: 'fr/' }[lang];
+            if (!target) { return; }
+            var path = window.location.pathname.replace(/\/index\.html$/, '/');
+            var isHostedRoot = path === '/';
+            var isLocalDocsRoot = window.location.protocol === 'file:' && /\/docs\/?(?:index\.html)?$/.test(window.location.pathname);
+            if (!isHostedRoot && !isLocalDocsRoot) { return; }
+            window.location.replace(target);
+        }());
+    </script>
+    </main>
+</body>
+</html>
