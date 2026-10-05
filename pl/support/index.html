@@ -1,63 +1,355 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Jak możemy pomóc? - Furniture Planner</title>
-    <meta name="description" content="Furniture Planner jest aktywnie rozwijany. Jeśli coś wygląda niepoprawnie w projekcie, wycenie, PDF, 3D albo imporcie/eksporcie, wyślij nam konkretne zgłoszenie.">
-    <link rel="canonical" href="https://furnitureplannerapp.github.io/pl/support/">
-    <link rel="stylesheet" href="../../assets/styles.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/apple-touch-icon.png">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Furniture Planner">
-    <meta property="og:title" content="Jak możemy pomóc? - Furniture Planner">
-    <meta property="og:description" content="Furniture Planner jest aktywnie rozwijany. Jeśli coś wygląda niepoprawnie w projekcie, wycenie, PDF, 3D albo imporcie/eksporcie, wyślij nam konkretne zgłoszenie.">
-    <meta property="og:url" content="https://furnitureplannerapp.github.io/pl/support/">
-    <meta property="og:image" content="https://furnitureplannerapp.github.io/assets/app-icon-512.png">
-    <meta name="twitter:card" content="summary">
-</head>
-<body>
-    <main class="shell">
-        <nav class="nav" aria-label="Main navigation">
-            <a class="brand" href="../"><img class="mark" src="../../assets/app-icon-192.png" alt="" aria-hidden="true"><span>Furniture Planner</span></a>
-            <div class="links">
-                <a href="../privacy-policy/">Polityka prywatności</a>
-                <a href="../terms-of-use/">Warunki</a>
-                <a href="../support/" aria-current="page">Support</a>
-            </div>
-        </nav>
-
-        <section class="hero">
-            <span class="pill">Support</span>
-            <h1>Jak możemy pomóc?</h1>
-            <p class="lead">Furniture Planner jest aktywnie rozwijany. Jeśli coś wygląda niepoprawnie w projekcie, wycenie, PDF, 3D albo imporcie/eksporcie, wyślij nam konkretne zgłoszenie.</p>
-            <div class="lang" aria-label="Language versions">
-                <a href="../../support/">English</a>
-                <a href="../../pl/support/" aria-current="page">Polski</a>
-                <a href="../../de/support/">Deutsch</a>
-                <a href="../../es/support/">Español</a>
-                <a href="../../fr/support/">Français</a>
-            </div>
-        </section>
-
-        <h2>Kontakt support</h2>
-        <p>Napisz na <a href="mailto:furnitureplanner.contact@gmail.com">furnitureplanner.contact@gmail.com</a>. Dołącz krótki opis, kroki odtworzenia, oczekiwany rezultat i aktualny rezultat.</p>
-
-        <h2>Pomocne załączniki</h2>
-        <p>Zrzuty ekranu, diagnostyczny JSON, wersja aplikacji, wersja iOS, model urządzenia i ID projektu pomagają szybciej odtworzyć problem. To Ty decydujesz, czy dołączyć dane diagnostyczne.</p>
-
-        <h2>Przetwarzanie zgłoszeń</h2>
-        <p>Dane przesłane w zgłoszeniu supportowym są wykorzystywane wyłącznie w celu analizy, odtworzenia i rozwiązania zgłoszonego problemu.</p>
-        <p>Przesłanie danych diagnostycznych jest dobrowolne.</p>
-
-        <h2>Czas odpowiedzi</h2>
-        <p>Dokładamy starań, aby odpowiadać na zgłoszenia tak szybko, jak to możliwe, jednak nie gwarantujemy określonego czasu odpowiedzi.</p>
-
-        <h2>Zakres pomocy</h2>
-        <p>Support obejmuje działanie aplikacji, eksporty, diagnostykę i spójność danych. Decyzje produkcyjne zawsze wymagają dodatkowej weryfikacji przed wykonaniem mebla.</p>
-
-        <footer class="footer">Furniture Planner - Jak możemy pomóc?</footer>
-    </main>
-</body>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Jak możemy pomóc? - Furniture Planner — 1.2.0 — wkrótce
+  </title>
+  <meta content="Dokumentacja nadchodzącej wersji 1.2.0. Pomoc z projektami mebli i kuchni, Live 3D, rozkrojem, kosztorysami, PDF/CSV, subskrypcjami oraz synchronizacją iCloud." name="description"/>
+  <link href="https://furnitureplannerapp.github.io/pl/support/" rel="canonical"/>
+  <link href="../../assets/styles.css?v=20261005-prereview" rel="stylesheet"/>
+  <link href="../../assets/favicon-32.png?v=20261005-prereview" rel="icon" sizes="32x32" type="image/png"/>
+  <link href="../../assets/apple-touch-icon.png?v=20261005-prereview" rel="apple-touch-icon" sizes="180x180"/>
+  <meta content="website" property="og:type"/>
+  <meta content="Furniture Planner" property="og:site_name"/>
+  <meta content="Jak możemy pomóc? - Furniture Planner — 1.2.0 — wkrótce" property="og:title"/>
+  <meta content="Dokumentacja nadchodzącej wersji 1.2.0. Pomoc z projektami mebli i kuchni, Live 3D, rozkrojem, kosztorysami, PDF/CSV, subskrypcjami oraz synchronizacją iCloud." property="og:description"/>
+  <meta content="https://furnitureplannerapp.github.io/pl/support/" property="og:url"/>
+  <meta content="https://furnitureplannerapp.github.io/assets/app-icon-512.png?v=20261005-prereview" property="og:image"/>
+  <meta content="summary" name="twitter:card"/>
+  <link href="https://furnitureplannerapp.github.io/support/" hreflang="en" rel="alternate"/>
+  <link href="https://furnitureplannerapp.github.io/pl/support/" hreflang="pl" rel="alternate"/>
+  <link href="https://furnitureplannerapp.github.io/de/support/" hreflang="de" rel="alternate"/>
+  <link href="https://furnitureplannerapp.github.io/es/support/" hreflang="es" rel="alternate"/>
+  <link href="https://furnitureplannerapp.github.io/fr/support/" hreflang="fr" rel="alternate"/>
+  <link href="https://furnitureplannerapp.github.io/support/" hreflang="x-default" rel="alternate"/>
+ </head>
+ <body class="document-page" data-document-version="1.2.0" data-release-state="pre-release">
+  <a class="skip-link" href="#content">
+   Przejdź do treści
+  </a>
+  <main class="shell">
+   <nav aria-label="Nawigacja główna" class="nav">
+    <a class="brand" href="../">
+     <img alt="" aria-hidden="true" class="mark" decoding="async" height="40" src="../../assets/app-icon-192.png?v=20261005-prereview" width="40"/>
+     <span>
+      Furniture Planner
+     </span>
+    </a>
+    <div class="links">
+     <a href="../privacy-policy/">
+      Polityka prywatności
+     </a>
+     <a href="../terms-of-use/">
+      Warunki
+     </a>
+     <a aria-current="page" href="../support/">
+      Pomoc
+     </a>
+    </div>
+   </nav>
+   <section class="hero" id="content">
+    <span class="pill">
+     Pomoc techniczna
+    </span>
+    <h1 id="document-title">
+     Jak możemy pomóc?
+    </h1>
+    <aside aria-labelledby="release-notice-title" class="release-notice" data-release-version="1.2.0">
+     <p class="notice-title" id="release-notice-title">
+      <strong>
+       Wersja 1.2.0 — przed premierą
+      </strong>
+     </p>
+     <p>
+      Ta strona opisuje nadchodzącą aktualizację 1.2.0. Kuchnia, plan Visual, rozkrój i nowe zasady Studio Trial dotyczą tej wersji, nie wcześniejszych wydań aplikacji.
+     </p>
+     <p class="history-links">
+      <span class="history-label">
+       Dokumenty dla wcześniejszych wersji:
+      </span>
+      <a href="../../archive/2026-06-14/pl/privacy-policy/">
+       Polityka prywatności
+      </a>
+      ·
+      <a href="../../archive/2026-06-14/pl/terms-of-use/">
+       Warunki korzystania
+      </a>
+     </p>
+    </aside>
+    <p class="lead">
+     Pomoc z projektami mebli i kuchni, Live 3D, rozkrojem, kosztorysami, PDF/CSV, subskrypcjami oraz synchronizacją iCloud.
+    </p>
+    <div aria-label="Wersje językowe" class="lang">
+     <a href="../../support/" hreflang="en" lang="en">
+      English
+     </a>
+     <a aria-current="page" href="../../pl/support/" hreflang="pl" lang="pl">
+      Polski
+     </a>
+     <a href="../../de/support/" hreflang="de" lang="de">
+      Deutsch
+     </a>
+     <a href="../../es/support/" hreflang="es" lang="es">
+      Español
+     </a>
+     <a href="../../fr/support/" hreflang="fr" lang="fr">
+      Français
+     </a>
+    </div>
+   </section>
+   <article aria-labelledby="document-title" class="document-content">
+    <h2>
+     Kontakt z pomocą techniczną
+    </h2>
+    <p>
+     Napisz na
+     <a href="mailto:furnitureplanner.contact@gmail.com">
+      furnitureplanner.contact@gmail.com
+     </a>
+     . Opisz kroki prowadzące do problemu, oczekiwany rezultat i to, co faktycznie się wydarzyło.
+    </p>
+    <h2>
+     Pomocne załączniki
+    </h2>
+    <p>
+     Podaj wersję aplikacji, model urządzenia, wersję iOS, iPadOS lub macOS, aktywny plan albo Studio Trial oraz rodzaj projektu: mebel czy Kuchnia.
+    </p>
+    <p>
+     Pomocny będzie zrzut ekranu lub krótkie nagranie. Plik projektu, dane diagnostyczne i dokumenty PDF/CSV dołączaj tylko wtedy, gdy są dostępne i potrzebne do wyjaśnienia problemu. Przy rozkroju podaj materiał, format arkusza, ustawienia rzazu i informację, czy obliczenia zostały ukończone.
+    </p>
+    <p>
+     Zgłoszenie do pomocy technicznej wysyłasz samodzielnie przez pocztę lub systemowe udostępnianie. Dołączanie danych projektu jest domyślnie wyłączone. Po jego włączeniu załącznik zawiera pełny projekt, opis problemu, informacje o urządzeniu i aplikacji oraz dane diagnostyczne dotyczące jej działania. Bez załącznika projektu wiadomość nadal zawiera informacje techniczne pomocne przy diagnozie.
+    </p>
+    <p>
+     Dane diagnostyczne i załączniki nie są w całości automatycznie anonimizowane. Mogą zawierać treść projektu i inne poufne informacje. Przed wysłaniem sprawdź wiadomość i załączniki oraz usuń dane niepotrzebne do rozwiązania problemu.
+    </p>
+    <p>
+     <strong>
+      Przed wysłaniem usuń dane klientów i inne poufne informacje, które nie są potrzebne do odtworzenia problemu.
+     </strong>
+     Nie wysyłaj haseł ani pełnych danych karty płatniczej.
+    </p>
+    <section id="faq">
+     <h2>
+      Najczęstsze pytania — wersja 1.2.0
+     </h2>
+     <details class="faq-item" id="version-120-availability">
+      <summary>
+       Dlaczego nie widzę Kuchni, planu Visual lub rozkroju?
+      </summary>
+      <div>
+       <p>
+        Te nowości będą dostępne w aktualizacji 1.2.0. Wcześniejsze wydanie z App Store może ich nie zawierać. Sprawdź wersję aplikacji; dostępne plany oraz status i pozostały limit triala znajdziesz w aplikacji.
+       </p>
+       <p class="history-links">
+        <span class="history-label">
+         Dokumenty dla wcześniejszych wersji:
+        </span>
+        <a href="../../archive/2026-06-14/pl/privacy-policy/">
+         Polityka prywatności
+        </a>
+        ·
+        <a href="../../archive/2026-06-14/pl/terms-of-use/">
+         Warunki korzystania
+        </a>
+       </p>
+      </div>
+     </details>
+     <details class="faq-item">
+      <summary>
+       Dlaczego nie mogę zapisać Kuchni lub otworzyć Live 3D?
+      </summary>
+      <div>
+       <p>
+        Free obejmuje projekty mebli w 2D i Kuchnię w 2D bez zapisu. Zapis Kuchni oraz Live 3D i AR odblokowuje Visual lub dostępny Studio Trial. AR wymaga obsługiwanego iPhone’a lub iPada.
+       </p>
+      </div>
+     </details>
+     <details class="faq-item">
+      <summary>
+       Który plan obejmuje kosztorys, rozkrój i dokumenty?
+      </summary>
+      <div>
+       <p>
+        Kosztorysy, listy materiałów i PDF dla klienta są w Premium i Studio. Rozkrój płyt, wycena produkcyjna według rozkroju, dokumentacja produkcyjna i CSV należą do Studio. Studio Trial ma dodatkowe limity.
+       </p>
+      </div>
+     </details>
+     <details class="faq-item">
+      <summary>
+       Jak działa Studio Trial?
+      </summary>
+      <div>
+       <p>
+        Dostępny trial uruchamiasz przyciskiem, bez zakupu. Trwa 7 kolejnych dni i pozwala utworzyć 3 projekty łącznie dla mebli i Kuchni. Trzeci projekt nie kończy wcześniej triala, a usuwanie projektów nie odnawia limitu. Trial sam nie przechodzi w płatny plan.
+       </p>
+      </div>
+     </details>
+     <details class="faq-item" id="trial-exports">
+      <summary>
+       Ile PDF i CSV mogę wygenerować w trialu?
+      </summary>
+      <div>
+       <p>
+        Na projekt dostępne są osobno: 1 oferta PDF, 1 PDF kalkulacji wewnętrznej i 1 produkcyjny PDF oraz 1 CSV wspólny dla wszystkich wariantów CSV. Limit zużywa udane wygenerowanie pliku, nawet jeśli potem zamkniesz udostępnianie bez zapisania lub wysłania.
+       </p>
+      </div>
+     </details>
+     <details class="faq-item" id="trial-restrictions">
+      <summary>
+       Dlaczego część funkcji Studio jest zablokowana w trialu?
+      </summary>
+      <div>
+       <p>
+        Trial nie obejmuje iCloud, pełnego backupu, importu/eksportu projektu ani personalizacji materiałów kuchni. Ogranicza też podstawowe parametry projektów utworzonych w trialu oraz zmiany geometrii i liczby ścian kuchni. Nie jest pełnym dostępem do płatnego Studio.
+       </p>
+      </div>
+     </details>
+     <details class="faq-item" id="trial-migration">
+      <summary>
+       Co dzieje się z wcześniejszym trialem po aktualizacji?
+      </summary>
+      <div>
+       <p>
+        Po aktualizacji do wersji 1.2.0 status wcześniejszego triala i pozostałe limity sprawdzisz w aplikacji. Aktualizacja nie służy do resetowania wykorzystanych limitów okresu próbnego.
+       </p>
+      </div>
+     </details>
+     <details class="faq-item">
+      <summary>
+       Dlaczego kwota po rozkroju różni się od wcześniejszej wyceny?
+      </summary>
+      <div>
+       <p>
+        Rozkrój uwzględnia arkusze i odpady, dlatego może dać inny wynik niż wcześniejsze szacowanie materiału. Sprawdź ceny, walutę, formaty płyt oraz to, czy rozkrój obejmuje wszystkie materiały i jest aktualny. Przed eksportem dokumentacji opartej na rozkroju zweryfikuj kompletność wyników.
+       </p>
+      </div>
+     </details>
+     <details class="faq-item">
+      <summary>
+       Zakup jest aktywny, ale funkcje są zablokowane.
+      </summary>
+      <div>
+       <p>
+        Sprawdź konto Apple użyte do zakupu, połączenie z internetem i użyj przywracania zakupów w aplikacji. Przywracanie dotyczy subskrypcji, a nie lokalnych projektów. Jeśli problem pozostaje, prześlij informację o planie i komunikacie blokady, bez danych płatniczych.
+       </p>
+      </div>
+     </details>
+     <details class="faq-item" id="plan-expiry">
+      <summary>
+       Czy po zakończeniu triala lub subskrypcji tracę projekty?
+      </summary>
+      <div>
+       <p>
+        Nie są automatycznie usuwane. Obowiązują uprawnienia nadal ważnego planu bazowego albo Free, a niedostępne funkcje są blokowane. Nie oznacza to ogólnego trybu tylko do odczytu. W Free tworzenie projektów uwzględnia limit 3 aktywnych, niearchiwalnych projektów. Dostęp offline nie przedłuża subskrypcji; po 30 dniach bez weryfikacji wymagana jest ponowna weryfikacja online.
+       </p>
+      </div>
+     </details>
+     <details class="faq-item">
+      <summary>
+       Czy wyłączenie iCloud usuwa dane lub tworzy kopię?
+      </summary>
+      <div>
+       <p>
+        iCloud jest domyślnie wyłączony i wymaga włączenia, dostępnego konta iCloud oraz płatnego Premium lub Studio; trial go nie obejmuje. Wyłączenie synchronizacji nie usuwa danych lokalnych ani chmurowych i nie tworzy kopii zapasowej. Synchronizacja nie obejmuje pakietów projektów. Nie odinstalowuj aplikacji bez zabezpieczenia ważnych danych.
+       </p>
+      </div>
+     </details>
+     <details class="faq-item" id="cloud-deletion">
+      <summary>
+       Czy „Wyczyść dane” usuwa też dane iCloud?
+      </summary>
+      <div>
+       <p>
+        Nie. „Wyczyść dane” usuwa dane lokalne, ale nie dane z iCloud. Dane pozostawione w chmurze mogą wrócić po ponownej synchronizacji. Także usunięcie pojedynczego zsynchronizowanego elementu nie usuwa trwale wszystkich jego danych z iCloud; ta wersja aplikacji nie ma funkcji trwałego usuwania tych pozostałych danych.
+       </p>
+      </div>
+     </details>
+     <details class="faq-item" id="firebase-controls">
+      <summary>
+       Czy mogę wyłączyć analitykę lub raporty awarii w aplikacji?
+      </summary>
+      <div>
+       <p>
+        Nie — w tej wersji aplikacji nie ma takiego przełącznika. Analityka i raporty awarii działają automatycznie. Wysłanie zgłoszenia do pomocy technicznej jest odrębną, dobrowolną czynnością. Szczegóły zbieranych danych opisuje polityka prywatności.
+       </p>
+      </div>
+     </details>
+     <details class="faq-item">
+      <summary>
+       Czy aplikacja działa na Macu?
+      </summary>
+      <div>
+       <p>
+        Tak, aplikacja jest dostępna w App Store na zgodnych komputerach Mac z Apple Silicon. AR nie jest dostępne na Macu, a dostępność pozostałych funkcji może zależeć od urządzenia. Wymagania systemowe sprawdź w App Store.
+       </p>
+      </div>
+     </details>
+     <details class="faq-item">
+      <summary>
+       Gdzie sprawdzę zasady i anuluję subskrypcję?
+      </summary>
+      <div>
+       <p>
+        Zakres planów znajdziesz w
+        <a href="../terms-of-use/#plans">
+         warunkach korzystania
+        </a>
+        . Anulowaniem i rozliczeniami zarządza Apple:
+        <a href="https://support.apple.com/en-us/118428">
+         zarządzanie subskrypcją
+        </a>
+        . Samo usunięcie aplikacji nie anuluje opłat.
+       </p>
+      </div>
+     </details>
+    </section>
+    <h2>
+     Przetwarzanie zgłoszeń
+    </h2>
+    <p>
+     Dane przesłane w zgłoszeniu supportowym są wykorzystywane wyłącznie w celu analizy, odtworzenia i rozwiązania zgłoszonego problemu.
+    </p>
+    <p>
+     Wysłanie zgłoszenia do supportu i jego załączników jest dobrowolne i wymaga Twojego działania. Automatyczne raporty awarii i analityka są odrębnymi mechanizmami opisanymi w
+     <a href="../privacy-policy/#firebase-controls">
+      polityce prywatności
+     </a>
+     .
+    </p>
+    <h2>
+     Czas odpowiedzi
+    </h2>
+    <p>
+     Dokładamy starań, aby odpowiadać na zgłoszenia tak szybko, jak to możliwe, jednak nie gwarantujemy określonego czasu odpowiedzi.
+    </p>
+    <h2>
+     Zakres pomocy
+    </h2>
+    <p>
+     Pomoc obejmuje działanie aplikacji, spójność danych, projekty Kuchni, rozkrój, eksporty i synchronizację. Nie zastępuje pomiarów, doboru technologii ani sprawdzenia dokumentacji przed produkcją.
+    </p>
+   </article>
+   <footer class="footer">
+    Furniture Planner · Kontakt:
+    <a href="mailto:furnitureplanner.contact@gmail.com">
+     furnitureplanner.contact@gmail.com
+    </a>
+    <p class="document-history">
+     <span class="history-label">
+      Dokumenty dla wcześniejszych wersji:
+     </span>
+     <a href="../../archive/2026-06-14/pl/privacy-policy/">
+      Polityka prywatności
+     </a>
+     ·
+     <a href="../../archive/2026-06-14/pl/terms-of-use/">
+      Warunki korzystania
+     </a>
+    </p>
+   </footer>
+  </main>
+ </body>
 </html>

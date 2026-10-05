@@ -1,63 +1,355 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>¿Cómo podemos ayudar? - Furniture Planner</title>
-    <meta name="description" content="Furniture Planner se desarrolla activamente. Si algo falla en un proyecto, presupuesto, PDF, 3D o importación/exportación, envíanos un reporte claro.">
-    <link rel="canonical" href="https://furnitureplannerapp.github.io/es/support/">
-    <link rel="stylesheet" href="../../assets/styles.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/apple-touch-icon.png">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Furniture Planner">
-    <meta property="og:title" content="¿Cómo podemos ayudar? - Furniture Planner">
-    <meta property="og:description" content="Furniture Planner se desarrolla activamente. Si algo falla en un proyecto, presupuesto, PDF, 3D o importación/exportación, envíanos un reporte claro.">
-    <meta property="og:url" content="https://furnitureplannerapp.github.io/es/support/">
-    <meta property="og:image" content="https://furnitureplannerapp.github.io/assets/app-icon-512.png">
-    <meta name="twitter:card" content="summary">
-</head>
-<body>
-    <main class="shell">
-        <nav class="nav" aria-label="Main navigation">
-            <a class="brand" href="../"><img class="mark" src="../../assets/app-icon-192.png" alt="" aria-hidden="true"><span>Furniture Planner</span></a>
-            <div class="links">
-                <a href="../privacy-policy/">Privacidad</a>
-                <a href="../terms-of-use/">Términos</a>
-                <a href="../support/" aria-current="page">Soporte</a>
-            </div>
-        </nav>
-
-        <section class="hero">
-            <span class="pill">Soporte</span>
-            <h1>¿Cómo podemos ayudar?</h1>
-            <p class="lead">Furniture Planner se desarrolla activamente. Si algo falla en un proyecto, presupuesto, PDF, 3D o importación/exportación, envíanos un reporte claro.</p>
-            <div class="lang" aria-label="Language versions">
-                <a href="../../support/">English</a>
-                <a href="../../pl/support/">Polski</a>
-                <a href="../../de/support/">Deutsch</a>
-                <a href="../../es/support/" aria-current="page">Español</a>
-                <a href="../../fr/support/">Français</a>
-            </div>
-        </section>
-
-        <h2>Contactar soporte</h2>
-        <p>Escríbenos a <a href="mailto:furnitureplanner.contact@gmail.com">furnitureplanner.contact@gmail.com</a>. Incluye una descripción breve, pasos para reproducir, resultado esperado y resultado actual.</p>
-
-        <h2>Adjuntos útiles</h2>
-        <p>Capturas, JSON diagnóstico, versión de la app, versión de iOS, modelo del dispositivo e ID del proyecto nos ayudan a reproducir el problema más rápido. Tú decides si adjuntas datos de diagnóstico.</p>
-
-        <h2>Procesamiento de reportes</h2>
-        <p>Los datos enviados en un reporte de soporte se utilizan únicamente para analizar, reproducir y resolver el problema reportado.</p>
-        <p>El envío de datos de diagnóstico es voluntario.</p>
-
-        <h2>Tiempo de respuesta</h2>
-        <p>Hacemos todo lo posible por responder a los reportes tan rápido como sea posible, pero no garantizamos un tiempo de respuesta específico.</p>
-
-        <h2>Alcance del soporte</h2>
-        <p>El soporte cubre comportamiento de la app, exportaciones, diagnóstico y consistencia de datos. Las decisiones de producción siempre deben verificarse antes de fabricar.</p>
-
-        <footer class="footer">Furniture Planner - ¿Cómo podemos ayudar?</footer>
-    </main>
-</body>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   ¿Cómo podemos ayudar? - Furniture Planner — 1.2.0 — próximamente
+  </title>
+  <meta content="Documentación de la próxima versión 1.2.0. Ayuda con proyectos de muebles y cocinas, Live 3D, corte de tableros, presupuestos, PDF/CSV, suscripciones y sincronización con iCloud." name="description"/>
+  <link href="https://furnitureplannerapp.github.io/es/support/" rel="canonical"/>
+  <link href="../../assets/styles.css?v=20261005-prereview" rel="stylesheet"/>
+  <link href="../../assets/favicon-32.png?v=20261005-prereview" rel="icon" sizes="32x32" type="image/png"/>
+  <link href="../../assets/apple-touch-icon.png?v=20261005-prereview" rel="apple-touch-icon" sizes="180x180"/>
+  <meta content="website" property="og:type"/>
+  <meta content="Furniture Planner" property="og:site_name"/>
+  <meta content="¿Cómo podemos ayudar? - Furniture Planner — 1.2.0 — próximamente" property="og:title"/>
+  <meta content="Documentación de la próxima versión 1.2.0. Ayuda con proyectos de muebles y cocinas, Live 3D, corte de tableros, presupuestos, PDF/CSV, suscripciones y sincronización con iCloud." property="og:description"/>
+  <meta content="https://furnitureplannerapp.github.io/es/support/" property="og:url"/>
+  <meta content="https://furnitureplannerapp.github.io/assets/app-icon-512.png?v=20261005-prereview" property="og:image"/>
+  <meta content="summary" name="twitter:card"/>
+  <link href="https://furnitureplannerapp.github.io/support/" hreflang="en" rel="alternate"/>
+  <link href="https://furnitureplannerapp.github.io/pl/support/" hreflang="pl" rel="alternate"/>
+  <link href="https://furnitureplannerapp.github.io/de/support/" hreflang="de" rel="alternate"/>
+  <link href="https://furnitureplannerapp.github.io/es/support/" hreflang="es" rel="alternate"/>
+  <link href="https://furnitureplannerapp.github.io/fr/support/" hreflang="fr" rel="alternate"/>
+  <link href="https://furnitureplannerapp.github.io/support/" hreflang="x-default" rel="alternate"/>
+ </head>
+ <body class="document-page" data-document-version="1.2.0" data-release-state="pre-release">
+  <a class="skip-link" href="#content">
+   Ir al contenido
+  </a>
+  <main class="shell">
+   <nav aria-label="Navegación principal" class="nav">
+    <a class="brand" href="../">
+     <img alt="" aria-hidden="true" class="mark" decoding="async" height="40" src="../../assets/app-icon-192.png?v=20261005-prereview" width="40"/>
+     <span>
+      Furniture Planner
+     </span>
+    </a>
+    <div class="links">
+     <a href="../privacy-policy/">
+      Privacidad
+     </a>
+     <a href="../terms-of-use/">
+      Términos de uso
+     </a>
+     <a aria-current="page" href="../support/">
+      Soporte
+     </a>
+    </div>
+   </nav>
+   <section class="hero" id="content">
+    <span class="pill">
+     Soporte
+    </span>
+    <h1 id="document-title">
+     ¿Cómo podemos ayudar?
+    </h1>
+    <aside aria-labelledby="release-notice-title" class="release-notice" data-release-version="1.2.0">
+     <p class="notice-title" id="release-notice-title">
+      <strong>
+       Versión 1.2.0 — antes del lanzamiento
+      </strong>
+     </p>
+     <p>
+      Esta página describe la próxima actualización 1.2.0. Cocina, el plan Visual, el corte de tableros y las nuevas reglas de Studio Trial corresponden a esa versión, no a versiones anteriores de la app.
+     </p>
+     <p class="history-links">
+      <span class="history-label">
+       Documentos para versiones anteriores:
+      </span>
+      <a href="../../archive/2026-06-14/es/privacy-policy/">
+       Política de privacidad
+      </a>
+      ·
+      <a href="../../archive/2026-06-14/es/terms-of-use/">
+       Términos de uso
+      </a>
+     </p>
+    </aside>
+    <p class="lead">
+     Ayuda con proyectos de muebles y cocinas, Live 3D, corte de tableros, presupuestos, PDF/CSV, suscripciones y sincronización con iCloud.
+    </p>
+    <div aria-label="Versiones de idioma" class="lang">
+     <a href="../../support/" hreflang="en" lang="en">
+      English
+     </a>
+     <a href="../../pl/support/" hreflang="pl" lang="pl">
+      Polski
+     </a>
+     <a href="../../de/support/" hreflang="de" lang="de">
+      Deutsch
+     </a>
+     <a aria-current="page" href="../../es/support/" hreflang="es" lang="es">
+      Español
+     </a>
+     <a href="../../fr/support/" hreflang="fr" lang="fr">
+      Français
+     </a>
+    </div>
+   </section>
+   <article aria-labelledby="document-title" class="document-content">
+    <h2>
+     Contactar soporte
+    </h2>
+    <p>
+     Escribe a
+     <a href="mailto:furnitureplanner.contact@gmail.com">
+      furnitureplanner.contact@gmail.com
+     </a>
+     . Describe los pasos que provocaron el problema, el resultado esperado y lo que sucedió realmente.
+    </p>
+    <h2>
+     Adjuntos útiles
+    </h2>
+    <p>
+     Indica la versión de la app, el modelo de dispositivo, la versión de iOS/iPadOS o macOS, el plan activo o Studio Trial y el tipo de proyecto: mueble o Cocina.
+    </p>
+    <p>
+     Una captura de pantalla o una grabación breve resulta útil. Adjunta un archivo de proyecto, datos de diagnóstico o documentos PDF/CSV solo cuando estén disponibles y sean necesarios para explicar el problema. Para problemas de corte, indica el material, el formato del tablero, el ancho de corte y si se completaron los cálculos.
+    </p>
+    <p>
+     Tú envías las solicitudes de soporte por correo o mediante las opciones de compartir del sistema. Adjuntar datos del proyecto está desactivado por defecto. Al activarlo, el adjunto contiene el proyecto completo, la descripción del problema, información del dispositivo y la app, y datos de diagnóstico sobre su funcionamiento. Sin adjuntar el proyecto, el mensaje sigue incluyendo información técnica útil para resolver el problema.
+    </p>
+    <p>
+     Los datos de diagnóstico y los adjuntos no se anonimizan automáticamente en su totalidad. Pueden contener información del proyecto y otros datos confidenciales. Revisa el mensaje y los adjuntos antes de enviarlos y elimina los datos que no sean necesarios para resolver el problema.
+    </p>
+    <p>
+     <strong>
+      Elimina los datos de clientes y otra información confidencial que no sea necesaria para reproducir el problema.
+     </strong>
+     No envíes contraseñas ni datos completos de tarjetas.
+    </p>
+    <section id="faq">
+     <h2>
+      Preguntas frecuentes — versión 1.2.0
+     </h2>
+     <details class="faq-item" id="version-120-availability">
+      <summary>
+       ¿Por qué no veo Cocina, Visual o el corte de tableros?
+      </summary>
+      <div>
+       <p>
+        Estas novedades estarán disponibles en la actualización 1.2.0. Una versión anterior del App Store puede no incluirlas. Comprueba la versión de la app; los planes disponibles, el estado de la prueba y los límites restantes se muestran en ella.
+       </p>
+       <p class="history-links">
+        <span class="history-label">
+         Documentos para versiones anteriores:
+        </span>
+        <a href="../../archive/2026-06-14/es/privacy-policy/">
+         Política de privacidad
+        </a>
+        ·
+        <a href="../../archive/2026-06-14/es/terms-of-use/">
+         Términos de uso
+        </a>
+       </p>
+      </div>
+     </details>
+     <details class="faq-item">
+      <summary>
+       ¿Por qué no puedo guardar una Cocina o abrir Live 3D?
+      </summary>
+      <div>
+       <p>
+        Free incluye proyectos de muebles en 2D y Cocina en 2D sin guardar. Visual o una Studio Trial disponible desbloquea el guardado de cocinas, Live 3D y AR. AR requiere un iPhone o iPad compatible.
+       </p>
+      </div>
+     </details>
+     <details class="faq-item">
+      <summary>
+       ¿Qué plan incluye presupuestos, corte y documentos?
+      </summary>
+      <div>
+       <p>
+        Los presupuestos, listas de materiales y PDF para clientes están en Premium y Studio. El corte de tableros, los costes de producción según el corte, los documentos de producción y CSV son de Studio. Studio Trial tiene límites adicionales.
+       </p>
+      </div>
+     </details>
+     <details class="faq-item">
+      <summary>
+       ¿Cómo funciona Studio Trial?
+      </summary>
+      <div>
+       <p>
+        Cuando esté disponible, activas la prueba con un botón, sin comprar. Dura 7 días consecutivos y permite 3 proyectos en total entre muebles y Cocina. El tercer proyecto no finaliza antes la prueba, y borrar proyectos no restablece el cupo. La prueba no se convierte automáticamente en un plan de pago.
+       </p>
+      </div>
+     </details>
+     <details class="faq-item" id="trial-exports">
+      <summary>
+       ¿Cuántos PDF y CSV puedo generar durante la prueba?
+      </summary>
+      <div>
+       <p>
+        Cada proyecto tiene cupos independientes de 1 PDF de oferta, 1 PDF de cálculo interno y 1 PDF de producción, más 1 CSV compartido por todas las variantes CSV. Generar correctamente el archivo consume el cupo aunque después cierres la opción de compartir sin guardarlo ni enviarlo.
+       </p>
+      </div>
+     </details>
+     <details class="faq-item" id="trial-restrictions">
+      <summary>
+       ¿Por qué algunas funciones de Studio están bloqueadas durante la prueba?
+      </summary>
+      <div>
+       <p>
+        La prueba excluye iCloud, la copia completa, la importación/exportación de proyectos y la personalización de materiales de cocina. También restringe los parámetros básicos de los proyectos creados durante la prueba y los cambios en geometría y número de paredes de la cocina. No equivale al acceso completo a Studio de pago.
+       </p>
+      </div>
+     </details>
+     <details class="faq-item" id="trial-migration">
+      <summary>
+       ¿Qué ocurre con una prueba anterior después de actualizar?
+      </summary>
+      <div>
+       <p>
+        Tras actualizar a la versión 1.2.0, consulta en la app el estado de la prueba anterior y los límites restantes. La actualización no está destinada a restablecer los límites de prueba ya utilizados.
+       </p>
+      </div>
+     </details>
+     <details class="faq-item">
+      <summary>
+       ¿Por qué el total tras el corte difiere del presupuesto anterior?
+      </summary>
+      <div>
+       <p>
+        El corte contempla tableros y desperdicios, por lo que puede diferir de una estimación previa de materiales. Comprueba precios, moneda, formatos de tableros y que el cálculo esté actualizado y cubra todos los materiales. Verifica que los resultados estén completos antes de exportar documentos basados en el corte.
+       </p>
+      </div>
+     </details>
+     <details class="faq-item">
+      <summary>
+       Mi compra está activa, pero las funciones están bloqueadas.
+      </summary>
+      <div>
+       <p>
+        Comprueba la cuenta de Apple de la compra y la conexión a internet y utiliza la restauración de compras de la app. Restaura la suscripción, no los proyectos locales. Si el problema continúa, envía el plan y el mensaje de bloqueo sin datos de pago.
+       </p>
+      </div>
+     </details>
+     <details class="faq-item" id="plan-expiry">
+      <summary>
+       ¿Pierdo proyectos cuando termina la prueba o la suscripción?
+      </summary>
+      <div>
+       <p>
+        Los proyectos no se eliminan automáticamente. Se aplican los permisos de un plan base aún válido o de Free y se bloquean las funciones no disponibles. No es un modo general de solo lectura. Al crear proyectos en Free se aplica un límite de 3 proyectos activos, no archivados. El acceso sin conexión no prolonga la suscripción; tras 30 días sin verificarla se requiere una nueva verificación en línea.
+       </p>
+      </div>
+     </details>
+     <details class="faq-item">
+      <summary>
+       ¿Desactivar iCloud elimina datos o crea una copia?
+      </summary>
+      <div>
+       <p>
+        iCloud está desactivado por defecto y requiere activación, una cuenta de iCloud disponible y Premium o Studio de pago; la prueba no lo incluye. Desactivar la sincronización no elimina datos locales ni de la nube ni crea una copia de seguridad. La sincronización no incluye paquetes de proyectos. Protege los datos importantes antes de desinstalar la app.
+       </p>
+      </div>
+     </details>
+     <details class="faq-item" id="cloud-deletion">
+      <summary>
+       ¿«Borrar datos» elimina también los datos de iCloud?
+      </summary>
+      <div>
+       <p>
+        No. «Borrar datos» elimina datos locales, no los de iCloud. Los datos que permanezcan en la nube pueden reaparecer tras una nueva sincronización. Eliminar un elemento sincronizado individual tampoco borra permanentemente todos sus datos de iCloud; esta versión de la app no ofrece una función para eliminar permanentemente esos datos restantes.
+       </p>
+      </div>
+     </details>
+     <details class="faq-item" id="firebase-controls">
+      <summary>
+       ¿Puedo desactivar la analítica o los informes de fallos en la app?
+      </summary>
+      <div>
+       <p>
+        No: esta versión de la app no ofrece ese interruptor. La analítica y los informes de fallos funcionan automáticamente. Enviar una solicitud de soporte es una acción distinta y voluntaria. La política de privacidad explica qué datos se recopilan.
+       </p>
+      </div>
+     </details>
+     <details class="faq-item">
+      <summary>
+       ¿La app funciona en Mac?
+      </summary>
+      <div>
+       <p>
+        Sí, la app está disponible en el App Store para Mac compatibles con Apple Silicon. AR no está disponible en Mac y otras funciones pueden depender del dispositivo. Consulta los requisitos del sistema en el App Store.
+       </p>
+      </div>
+     </details>
+     <details class="faq-item">
+      <summary>
+       ¿Dónde consulto las condiciones y cancelo una suscripción?
+      </summary>
+      <div>
+       <p>
+        Consulta los
+        <a href="../terms-of-use/#plans">
+         términos de uso
+        </a>
+        para ver los planes. Apple gestiona cancelación y facturación:
+        <a href="https://support.apple.com/en-us/118428">
+         gestionar la suscripción
+        </a>
+        . Eliminar la app no detiene los cargos.
+       </p>
+      </div>
+     </details>
+    </section>
+    <h2>
+     Procesamiento de reportes
+    </h2>
+    <p>
+     Los datos enviados en un reporte de soporte se utilizan únicamente para analizar, reproducir y resolver el problema reportado.
+    </p>
+    <p>
+     Enviar una solicitud de soporte y sus adjuntos es voluntario y requiere tu intervención. Los informes automáticos de fallos y la analítica son mecanismos separados descritos en la
+     <a href="../privacy-policy/#firebase-controls">
+      Política de Privacidad
+     </a>
+     .
+    </p>
+    <h2>
+     Tiempo de respuesta
+    </h2>
+    <p>
+     Hacemos todo lo posible por responder a los reportes tan rápido como sea posible, pero no garantizamos un tiempo de respuesta específico.
+    </p>
+    <h2>
+     Alcance del soporte
+    </h2>
+    <p>
+     El soporte cubre el funcionamiento de la app, la coherencia de los datos, proyectos de Cocina, corte, exportaciones y sincronización. No sustituye mediciones, decisiones de fabricación ni la revisión de documentos antes de producir.
+    </p>
+   </article>
+   <footer class="footer">
+    Furniture Planner · Contacto:
+    <a href="mailto:furnitureplanner.contact@gmail.com">
+     furnitureplanner.contact@gmail.com
+    </a>
+    <p class="document-history">
+     <span class="history-label">
+      Documentos para versiones anteriores:
+     </span>
+     <a href="../../archive/2026-06-14/es/privacy-policy/">
+      Política de privacidad
+     </a>
+     ·
+     <a href="../../archive/2026-06-14/es/terms-of-use/">
+      Términos de uso
+     </a>
+    </p>
+   </footer>
+  </main>
+ </body>
 </html>

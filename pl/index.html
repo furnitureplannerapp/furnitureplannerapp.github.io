@@ -1,64 +1,201 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Furniture Planner</title>
-    <meta name="description" content="Projektuj szafy, zabudowy, RTV i projekty klientów z podglądem 2D/3D, materiałami, wyceną oraz profesjonalnym eksportem PDF.">
-    <link rel="canonical" href="https://furnitureplannerapp.github.io/pl/">
-    <link rel="stylesheet" href="../assets/styles.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Furniture Planner">
-    <meta property="og:title" content="Furniture Planner">
-    <meta property="og:description" content="Projektuj szafy, zabudowy, RTV i projekty klientów z podglądem 2D/3D, materiałami, wyceną oraz profesjonalnym eksportem PDF.">
-    <meta property="og:url" content="https://furnitureplannerapp.github.io/pl/">
-    <meta property="og:image" content="https://furnitureplannerapp.github.io/assets/app-icon-512.png">
-    <meta name="twitter:card" content="summary">
-</head>
-<body>
-    <main class="shell">
-        <nav class="nav" aria-label="Main navigation">
-            <a class="brand" href="./"><img class="mark" src="../assets/app-icon-192.png" alt="" aria-hidden="true"><span>Furniture Planner</span></a>
-            <div class="links">
-                <a href="privacy-policy/">Polityka prywatności</a>
-                <a href="terms-of-use/">Warunki</a>
-                <a href="support/">Support</a>
-            </div>
-        </nav>
-
-        <section class="hero">
-            <span class="pill">Workspace do projektowania mebli na iOS</span>
-            <h1>Furniture Planner</h1>
-            <p class="lead">Projektuj szafy, zabudowy, RTV i projekty klientów z podglądem 2D/3D, materiałami, wyceną oraz profesjonalnym eksportem PDF.</p>
-            <div class="lang" aria-label="Language versions">
-                <a href="../">English</a>
-                <a href="../pl/" aria-current="page">Polski</a>
-                <a href="../de/">Deutsch</a>
-                <a href="../es/">Español</a>
-                <a href="../fr/">Français</a>
-            </div>
-        </section>
-
-        <section class="grid" aria-label="Key links">
-            <a class="card" href="privacy-policy/">
-                <strong>Polityka prywatności</strong>
-                <p>Jak Furniture Planner przechowuje projekty, klientów, diagnostykę i opcjonalną synchronizację iCloud.</p>
-            </a>
-            <a class="card" href="terms-of-use/">
-                <strong>Warunki</strong>
-                <p>Zasady korzystania, subskrypcje i odpowiedzialność za weryfikację przed produkcją.</p>
-            </a>
-            <a class="card" href="support/">
-                <strong>Support</strong>
-                <p>Jak zgłaszać problemy i jakie dane pomagają je odtworzyć.</p>
-            </a>
-        </section>
-
-        <footer class="footer">
-            Contact: <a href="mailto:furnitureplanner.contact@gmail.com">furnitureplanner.contact@gmail.com</a>
-        </footer>
-    </main>
-</body>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Furniture Planner — 1.2.0 — wkrótce
+  </title>
+  <meta content="Dokumentacja nadchodzącej wersji 1.2.0. Projektuj meble na wymiar i kuchnie w 2D, oglądaj je w Live 3D i AR. Przygotowuj kosztorysy, dokumenty dla klienta oraz rozkrój płyt — zależnie od wybranego planu." name="description"/>
+  <link href="https://furnitureplannerapp.github.io/pl/" rel="canonical"/>
+  <link href="../assets/styles.css?v=20261005-prereview" rel="stylesheet"/>
+  <link href="../assets/favicon-32.png?v=20261005-prereview" rel="icon" sizes="32x32" type="image/png"/>
+  <link href="../assets/apple-touch-icon.png?v=20261005-prereview" rel="apple-touch-icon" sizes="180x180"/>
+  <meta content="website" property="og:type"/>
+  <meta content="Furniture Planner" property="og:site_name"/>
+  <meta content="Furniture Planner — 1.2.0 — wkrótce" property="og:title"/>
+  <meta content="Dokumentacja nadchodzącej wersji 1.2.0. Projektuj meble na wymiar i kuchnie w 2D, oglądaj je w Live 3D i AR. Przygotowuj kosztorysy, dokumenty dla klienta oraz rozkrój płyt — zależnie od wybranego planu." property="og:description"/>
+  <meta content="https://furnitureplannerapp.github.io/pl/" property="og:url"/>
+  <meta content="https://furnitureplannerapp.github.io/assets/app-icon-512.png?v=20261005-prereview" property="og:image"/>
+  <meta content="summary" name="twitter:card"/>
+  <link href="https://furnitureplannerapp.github.io/" hreflang="en" rel="alternate"/>
+  <link href="https://furnitureplannerapp.github.io/pl/" hreflang="pl" rel="alternate"/>
+  <link href="https://furnitureplannerapp.github.io/de/" hreflang="de" rel="alternate"/>
+  <link href="https://furnitureplannerapp.github.io/es/" hreflang="es" rel="alternate"/>
+  <link href="https://furnitureplannerapp.github.io/fr/" hreflang="fr" rel="alternate"/>
+  <link href="https://furnitureplannerapp.github.io/" hreflang="x-default" rel="alternate"/>
+ </head>
+ <body class="home-page" data-document-version="1.2.0" data-release-state="pre-release">
+  <a class="skip-link" href="#content">
+   Przejdź do treści
+  </a>
+  <main class="shell">
+   <nav aria-label="Nawigacja główna" class="nav">
+    <a class="brand" href="./">
+     <img alt="" aria-hidden="true" class="mark" decoding="async" height="40" src="../assets/app-icon-192.png?v=20261005-prereview" width="40"/>
+     <span>
+      Furniture Planner
+     </span>
+    </a>
+    <div class="links">
+     <a href="privacy-policy/">
+      Polityka prywatności
+     </a>
+     <a href="terms-of-use/">
+      Warunki
+     </a>
+     <a href="support/">
+      Pomoc
+     </a>
+    </div>
+   </nav>
+   <section class="hero" id="content">
+    <span class="pill">
+     Projektowanie mebli i kuchni
+    </span>
+    <h1>
+     Furniture Planner
+    </h1>
+    <aside aria-labelledby="release-notice-title" class="release-notice" data-release-version="1.2.0">
+     <p class="notice-title" id="release-notice-title">
+      <strong>
+       Wersja 1.2.0 — przed premierą
+      </strong>
+     </p>
+     <p>
+      Ta strona opisuje nadchodzącą aktualizację 1.2.0. Kuchnia, plan Visual, rozkrój i nowe zasady Studio Trial dotyczą tej wersji, nie wcześniejszych wydań aplikacji.
+     </p>
+     <p class="history-links">
+      <span class="history-label">
+       Dokumenty dla wcześniejszych wersji:
+      </span>
+      <a href="../archive/2026-06-14/pl/privacy-policy/">
+       Polityka prywatności
+      </a>
+      ·
+      <a href="../archive/2026-06-14/pl/terms-of-use/">
+       Warunki korzystania
+      </a>
+     </p>
+    </aside>
+    <p class="lead">
+     Projektuj meble na wymiar i kuchnie w 2D, oglądaj je w Live 3D i AR. Przygotowuj kosztorysy, dokumenty dla klienta oraz rozkrój płyt — zależnie od wybranego planu.
+    </p>
+    <div aria-label="Wersje językowe" class="lang">
+     <a href="../" hreflang="en" lang="en">
+      English
+     </a>
+     <a aria-current="page" href="../pl/" hreflang="pl" lang="pl">
+      Polski
+     </a>
+     <a href="../de/" hreflang="de" lang="de">
+      Deutsch
+     </a>
+     <a href="../es/" hreflang="es" lang="es">
+      Español
+     </a>
+     <a href="../fr/" hreflang="fr" lang="fr">
+      Français
+     </a>
+    </div>
+   </section>
+   <section id="features">
+    <h2>
+     Od projektu do przygotowania produkcji — wersja 1.2.0
+    </h2>
+    <p class="release-scope">
+     Poniższy opis funkcji dotyczy wersji 1.2.0, która nie jest jeszcze publicznie dostępna w App Store.
+    </p>
+    <div class="grid feature-grid">
+     <div class="card">
+      <h3>
+       Meble i Kuchnia
+      </h3>
+      <p>
+       Szafy, zabudowy, komody i moduły kuchenne: dolne, wiszące, narożne oraz słupki. Do tego AGD, blaty, cokoły, ściany i podłoga.
+      </p>
+     </div>
+     <div class="card">
+      <h3>
+       Materiały i wizualizacje
+      </h3>
+      <p>
+       Własna biblioteka materiałów i wyposażenia jest dostępna już w Free. Kuchnia oferuje materiały, uchwyty i oświetlenie; wizualizacje mają presety sceny i regulację jasności. Live 3D i AR są dostępne od Visual na obsługiwanych urządzeniach.
+      </p>
+     </div>
+     <div class="card">
+      <h3>
+       Wycena i dokumentacja
+      </h3>
+      <p>
+       Premium dodaje kosztorysy i PDF dla klienta. Studio rozszerza je o rozkrój płyt, odpady i użyteczne resztki, wycenę według rozkroju, dokumentację produkcyjną i CSV.
+      </p>
+     </div>
+    </div>
+   </section>
+   <section id="get-started">
+    <h2>
+     Zacznij bez konta — wersja 1.2.0
+    </h2>
+    <p class="release-scope">
+     Poniższy opis funkcji dotyczy wersji 1.2.0, która nie jest jeszcze publicznie dostępna w App Store.
+    </p>
+    <p>
+     Free obejmuje edytor 2D, własną bibliotekę i limit 3 projektów mebli; przy tworzeniu liczone są projekty aktywne, niearchiwalne. Kuchnię możesz wypróbować w 2D bez zapisu. Visual odblokowuje nielimitowany zapis projektów mebli i kuchni. Aplikacja działa na iPhonie, iPadzie i zgodnych Macach z Apple Silicon; AR wymaga obsługiwanego iPhone’a lub iPada.
+    </p>
+    <p>
+     Dostępny Studio Trial uruchamiasz bez zakupu: 7 kolejnych dni i maksymalnie 3 utworzone projekty łącznie, także Kuchni. Trial ma osobne limity eksportów i nie obejmuje m.in. iCloud, pełnego backupu ani importu/eksportu projektu. Nie odnawia się automatycznie w płatny plan.
+    </p>
+    <p>
+     <a class="text-link" href="terms-of-use/#plans">
+      Porównaj Free, Visual, Premium i Studio oraz sprawdź zasady triala →
+     </a>
+    </p>
+   </section>
+   <section aria-label="Przydatne strony" class="grid">
+    <a class="card" href="privacy-policy/">
+     <strong>
+      Polityka prywatności
+     </strong>
+     <p>
+      Dane projektów i klientów, eksporty, opcjonalny iCloud oraz diagnostyka i analityka Firebase.
+     </p>
+    </a>
+    <a class="card" href="terms-of-use/">
+     <strong>
+      Warunki
+     </strong>
+     <p>
+      Zakres planów, Studio Trial, subskrypcje i weryfikacja dokumentacji przed produkcją.
+     </p>
+    </a>
+    <a class="card" href="support/">
+     <strong>
+      Pomoc
+     </strong>
+     <p>
+      Pomoc z Kuchnią, rozkrojem, dokumentami, subskrypcjami i synchronizacją.
+     </p>
+    </a>
+   </section>
+   <footer class="footer">
+    Furniture Planner · Kontakt:
+    <a href="mailto:furnitureplanner.contact@gmail.com">
+     furnitureplanner.contact@gmail.com
+    </a>
+    <p class="document-history">
+     <span class="history-label">
+      Dokumenty dla wcześniejszych wersji:
+     </span>
+     <a href="../archive/2026-06-14/pl/privacy-policy/">
+      Polityka prywatności
+     </a>
+     ·
+     <a href="../archive/2026-06-14/pl/terms-of-use/">
+      Warunki korzystania
+     </a>
+    </p>
+   </footer>
+  </main>
+ </body>
 </html>
