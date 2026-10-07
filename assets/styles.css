@@ -255,8 +255,8 @@ li + li { margin-top: 6px; }
     a { text-decoration: underline; }
 }
 
-/* Version scope is visible without JavaScript, including in printed documents. */
-.release-notice, .archive-notice {
+/* Archived documents retain a visible history notice. */
+.archive-notice {
     width: 100%;
     margin: 0 0 22px;
     padding: 16px 18px;
@@ -267,27 +267,47 @@ li + li { margin-top: 6px; }
     font-size: 15px;
     line-height: 1.55;
 }
-.release-notice p, .archive-notice p { margin: 0 0 10px; }
-.release-notice p:last-child, .archive-notice p:last-child { margin-bottom: 0; }
+.archive-notice p { margin: 0 0 10px; }
+.archive-notice p:last-child { margin-bottom: 0; }
 .notice-title { color: var(--ink); }
 .history-links { font-size: 14px; line-height: 1.65; }
 .history-label { display: block; }
-.release-notice a, .archive-notice a, .release-scope a, .document-history a {
+.archive-notice a, .document-history a {
     text-decoration: underline;
     text-underline-offset: 3px;
 }
-.release-scope {
-    margin: 0 0 18px;
-    padding: 0 0 0 14px;
-    border-left: 2px solid var(--line);
-    font-size: 15px;
-    line-height: 1.6;
-}
 .document-history { margin: 14px 0 0; font-size: 14px; }
 @media (max-width: 640px) {
-    .release-notice, .archive-notice { padding: 14px; margin-bottom: 18px; }
+    .archive-notice { padding: 14px; margin-bottom: 18px; }
 }
 @media print {
-    .release-notice, .archive-notice { background: none; border-color: #aaa; }
-    .release-scope { border-color: #aaa; }
+    .archive-notice { background: none; border-color: #aaa; }
+}
+
+
+.release-meta, .document-meta {
+    margin: 0 0 18px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+.release-meta { color: var(--accent); }
+.app-store-link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    min-height: 48px;
+    margin: 2px 0 20px;
+    padding: 12px 20px;
+    border: 1px solid var(--accent);
+    border-radius: 12px;
+    background: var(--accent);
+    color: var(--bg);
+    font-weight: 700;
+    line-height: 1.4;
+    text-align: center;
+}
+.app-store-link:hover { background: #e5b783; text-decoration: none; }
+@media print {
+    .app-store-link { background: none; color: #111; border-color: #aaa; }
 }
