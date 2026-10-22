@@ -25,7 +25,7 @@
   <link href="https://furnitureplannerapp.github.io/fr/support/" hreflang="fr" rel="alternate"/>
   <link href="https://furnitureplannerapp.github.io/support/" hreflang="x-default" rel="alternate"/>
  </head>
- <body class="document-page" data-document-updated="2026-10-07">
+ <body class="document-page" data-document-updated="2026-10-22">
   <a class="skip-link" href="#content">
    Zum Inhalt springen
   </a>
@@ -57,7 +57,7 @@
      Wie können wir helfen?
     </h1>
     <p class="document-meta">
-     Aktualisiert: <time datetime="2026-10-07">7. Oktober 2026</time>
+     Aktualisiert: <time datetime="2026-10-22">22. Oktober 2026</time>
     </p>
     <p class="lead">
      Hilfe bei Möbel- und Küchenprojekten, Live 3D, Plattenzuschnitt, Kalkulationen, PDF/CSV, Abonnements und iCloud-Synchronisierung.
@@ -100,22 +100,63 @@
     <p>
      Ein Screenshot oder eine kurze Aufnahme hilft. Hänge eine Projektdatei, Diagnosedaten oder PDF-/CSV-Dokumente nur an, wenn sie verfügbar und zur Erklärung des Problems nötig sind. Nenne bei Zuschnittproblemen Material, Plattenformat, Schnittbreite und ob die Berechnungen abgeschlossen wurden.
     </p>
+    <h2 id="project-diagnostics">
+     Probleme melden ab Version 1.3.0
+    </h2>
     <p>
-     Supportanfragen versendest du selbst per E-Mail oder über die systemeigene Teilen-Funktion. Das Anhängen von Projektdaten ist standardmäßig ausgeschaltet. Wenn du es aktivierst, enthält der Anhang das vollständige Projekt, deine Problembeschreibung, Geräte- und App-Informationen sowie Diagnosedaten zur App-Nutzung. Auch ohne Projektanhang enthält die Nachricht technische Informationen, die bei der Fehlersuche helfen.
+     Öffne „Problem melden“ in der Projektzusammenfassung oder in der Kostenkalkulation. Du kannst den Support ohne Projektanhang kontaktieren. Das Einschließen von Projektdiagnosedaten ist freiwillig und standardmäßig ausgeschaltet.
     </p>
     <p>
-     Diagnosedaten und Anhänge werden nicht vollständig automatisch anonymisiert. Sie können Projektinhalte und andere vertrauliche Informationen enthalten. Prüfe Nachricht und Anhänge vor dem Versand und entferne Daten, die zur Lösung des Problems nicht benötigt werden.
+     Bei Aktivierung enthält der Bericht die technische Möbel- oder Küchenkonfiguration sowie Definitionen der verwendeten Materialien und Ausstattung, auch eigener Einträge. Kundendatensätze, Kundenverknüpfungen und das Firmenprofil werden nicht angehängt. Projekt- und Elementnamen, Notizen und andere Freitextfelder des Projekts werden weggelassen oder neutralisiert. Fotos, private Texturen und externe Modelle werden nicht angehängt.
     </p>
     <p>
-     <strong>
-      Entferne Kundendaten und andere vertrauliche Informationen, die zur Reproduktion nicht benötigt werden.
-     </strong>
-     Sende keine Passwörter oder vollständigen Kreditkartendaten.
+     <strong>Das angehängte Diagnoseprojekt enthält standardmäßig fiktive Testpreise, Arbeitskostensätze und Margen anstelle deiner tatsächlichen Beträge.</strong> Die Werte werden nach festen Regeln passend zum Elementtyp und zur Abrechnungseinheit festgelegt und sind unabhängig von deinen Preisen. Die Ersetzung betrifft nur die Diagnosekopie, nicht das Projekt oder die Bibliothek auf deinem Gerät.
+    </p>
+    <p>
+     Bei einem Problem mit deiner tatsächlichen Kalkulation kannst du zusätzlich Kalkulationsdaten (Preise und Sätze) einschließen. Diese Option ist standardmäßig ausgeschaltet und nur zusammen mit Projektdiagnosedaten verfügbar. Sie umfasst deine tatsächlichen Preise, Sätze, Arbeitskosten, Margen und Beträge eigener Kalkulationspositionen, stellt aber ausgeschlossene Kundendaten und ursprüngliche Texte nicht wieder her. Wenn du Projektdaten deaktivierst, wird auch das Anhängen tatsächlicher Kalkulationsdaten deaktiviert.
+    </p>
+    <p>
+     Testwerte erleichtern die Diagnose, können aber die Reproduktion eines Fehlers verhindern, der von bestimmten Beträgen, Rundungen oder fehlenden Preisen abhängt. Eine auf Testwerten beruhende Kalkulation ist nicht deine tatsächliche Kalkulation und sollte nicht für Kundenangebote oder Materialbestellungen verwendet werden.
+    </p>
+    <p>
+     Nach Auswahl des Supportkontakts bereitet die App den Bericht vor und öffnet eine E-Mail mit JSON-Anhang oder die systemeigene Teilen-Funktion. Wähle im zweiten Fall eine App, die Dateien unterstützt. Es wird nichts automatisch versendet — du kannst die Nachricht prüfen und den Versand abbrechen. Schlägt die Vorbereitung des Anhangs fehl, zeigt die App einen Fehler an, statt die Datei unbemerkt wegzulassen.
+    </p>
+    <p>
+     <strong>Die Filterung gilt für den Diagnosebericht, nicht für deinen Nachrichtentext oder manuell hinzugefügte Dateien.</strong> Prüfe Screenshots, Aufnahmen, PDF-/CSV-Dateien und normale Exporte vor dem Versand. Sende keine unnötigen Kundendaten, Passwörter oder vollständigen Kreditkartendaten. Der Bericht behält technische Kennungen bei, und die Projektkonfiguration kann vertraulich sein — der Anhang ist nicht garantiert anonym.
+    </p>
+    <p>
+     Ein Diagnosebericht ist keine vollständige Sicherung. Fehlende ursprüngliche Bezeichnungen, private Texturen oder nicht mehr vorhandene Bibliotheksdefinitionen können die Reproduktion bestimmter Probleme einschränken. In älteren App-Versionen kann ein Bericht das vollständige Projekt und Preise enthalten; wir empfehlen eine Aktualisierung vor dem Versand.
+    </p>
+    <p>
+     Den genauen Datenumfang, die Verwendung der Anfragen und die Aufbewahrung beschreibt die <a href="../privacy-policy/#support-data">Datenschutzerklärung</a>.
     </p>
     <section id="faq">
      <h2>
       Häufige Fragen
      </h2>
+     <details class="faq-item" id="diagnostic-test-prices">
+      <summary>
+       Warum können die Preise im Diagnosebericht von denen in meinem Projekt abweichen?
+      </summary>
+      <div>
+       <p>
+        Wenn du nicht das Anhängen tatsächlicher Kalkulationsdaten auswählst, verwendet die Diagnosekopie fiktive Testwerte, damit deine Preise, Sätze und Margen nicht weitergegeben werden. Dein ursprüngliches Projekt und deine Bibliothek bleiben unverändert. Testbeträge dienen der Fehleranalyse, nicht der Erstellung eines Angebots oder der Materialbestellung. Wenn das Problem von bestimmten Beträgen abhängt, kannst du tatsächliche Kalkulationsdaten beifügen.
+       </p>
+      </div>
+     </details>
+     <details class="faq-item" id="diagnostic-attachment">
+      <summary>
+       Was tun, wenn ich den Diagnosebericht nicht anhängen oder versenden kann?
+      </summary>
+      <div>
+       <p>
+        Zeigt die App einen Vorbereitungsfehler, notiere die Meldung oder erstelle einen Screenshot. Ein besonders großer oder komplexer Bericht kann die Diagnosegrenzen überschreiten. Du kannst die Projektdaten deaktivieren und nur die Problembeschreibung senden — eine vollständige Sicherung ist kein notwendiger Ersatz.
+       </p>
+       <p>
+        Überträgt die Teilen-Funktion die Datei nicht, wähle eine andere App mit Anhangunterstützung oder speichere die Datei in Dateien und hänge sie manuell an eine E-Mail an. Dein E-Mail-Anbieter kann eine eigene Größenbegrenzung haben. Das Öffnen einer E-Mail oder des Teilen-Dialogs bestätigt keine Zustellung.
+       </p>
+      </div>
+     </details>
      <details class="faq-item" id="version-120-availability">
       <summary>
        Warum sehe ich die Küchenplanung, Visual oder den Plattenzuschnitt nicht?
@@ -322,6 +363,14 @@
      <span class="history-label">
       Dokumente für frühere Versionen:
      </span>
+     <a href="../../archive/2026-10-07/de/terms-of-use/">
+      Nutzungsbedingungen vor 1.3.0 — 7. Oktober 2026
+     </a>
+     ·
+     <a href="../../archive/2026-10-07/de/privacy-policy/">
+      Datenschutzerklärung vor 1.3.0 — 7. Oktober 2026
+     </a>
+     ·
      <a href="../../archive/2026-06-14/de/privacy-policy/">
       Datenschutzerklärung
      </a>

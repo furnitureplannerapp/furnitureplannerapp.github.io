@@ -25,7 +25,7 @@
   <link href="https://furnitureplannerapp.github.io/fr/privacy-policy/" hreflang="fr" rel="alternate"/>
   <link href="https://furnitureplannerapp.github.io/privacy-policy/" hreflang="x-default" rel="alternate"/>
  </head>
- <body class="document-page" data-document-updated="2026-10-07">
+ <body class="document-page" data-document-updated="2026-10-22" data-document-effective="2026-10-22">
   <a class="skip-link" href="#content">
    Przejdź do treści
   </a>
@@ -57,7 +57,7 @@
      Polityka prywatności
     </h1>
     <p class="document-meta">
-     Aktualizacja: <time datetime="2026-10-07">7 października 2026</time>
+     Aktualizacja i obowiązywanie od: <time datetime="2026-10-22">22 października 2026</time>
     </p>
     <p class="lead">
      Projekty mebli i kuchni są zapisywane lokalnie. Synchronizacja iCloud jest opcjonalna i domyślnie wyłączona. Firebase obsługuje raporty awarii, analitykę użycia i zdalną konfigurację; ich działanie opisano poniżej.
@@ -142,6 +142,9 @@
      <p>
       Pliki udostępniasz za pomocą systemowego menu udostępniania; wybierasz odbiorcę i miejsce zapisu. Kopie zapisane w Plikach, iCloud Drive lub innych usługach są niezależne od synchronizacji w aplikacji i pozostają poza jej kontrolą. Usunięcie danych w aplikacji nie usuwa tych kopii.
      </p>
+     <p>
+      Opisany wyżej zwykły eksport projektu i pełna kopia zapasowa nie korzystają z filtrowania raportu diagnostycznego. Odrębny zakres danych funkcji „Zgłoś problem” od wersji 1.3.0 opisuje sekcja <a href="#support-data">Kontakt z pomocą techniczną</a>.
+     </p>
     </section>
     <h2>
      Cele przetwarzania danych
@@ -162,13 +165,52 @@
      Kontakt z pomocą techniczną
     </h2>
     <p>
-     Zgłoszenie do pomocy technicznej wysyłasz samodzielnie przez pocztę lub systemowe udostępnianie. Dołączanie danych projektu jest domyślnie wyłączone. Po jego włączeniu załącznik zawiera pełny projekt, opis problemu, informacje o urządzeniu i aplikacji oraz dane diagnostyczne dotyczące jej działania. Bez załącznika projektu wiadomość nadal zawiera informacje techniczne pomocne przy diagnozie.
+     Poniższy opis raportów diagnostycznych dotyczy funkcji „Zgłoś problem” od wersji 1.3.0. W starszych wersjach raport może zawierać szerszy zakres danych, w tym pełny projekt i ceny. Przed udostępnieniem danych zalecamy aktualizację aplikacji.
     </p>
     <p>
-     Dane diagnostyczne i załączniki nie są w całości automatycznie anonimizowane. Mogą zawierać treść projektu i inne poufne informacje. Przed wysłaniem sprawdź wiadomość i załączniki oraz usuń dane niepotrzebne do rozwiązania problemu.
+     Dołączenie danych diagnostycznych projektu jest dobrowolne i domyślnie wyłączone. Bez włączenia tej opcji nie dołączamy konfiguracji projektu, zależności jego biblioteki ani ustawień cenowych. Zgłoszenie może nadal zawierać opis problemu, wersję i build aplikacji, model urządzenia, wersję systemu, czas utworzenia raportu i kontekst ekranu lub odzyskiwania po awarii. Model urządzenia oznacza typ sprzętu, a nie jego trwały identyfikator.
+    </p>
+    <h3 id="support-diagnostic-scope">
+     Jakie dane zawiera raport
+    </h3>
+    <p>
+     Po włączeniu opcji „Dołącz dane diagnostyczne projektu” raport zawiera techniczną konfigurację mebla lub kuchni: wymiary, geometrię, ściany, moduły, skosy, podziały, fronty, AGD, wyposażenie oraz ustawienia konstrukcji i produkcji. Dołączane są także definicje użytych materiałów, okuć i ich zależności, w tym pozycji własnej biblioteki. Nie jest dołączana cała biblioteka ani zawartość innych, niepowiązanych projektów.
     </p>
     <p>
-     Aplikacja nie wysyła zgłoszenia automatycznie — o jego wysłaniu decydujesz Ty. Korespondencja obejmuje adres nadawcy oraz przesłane treści i załączniki. Wykorzystujemy ją do obsługi zgłoszenia.
+     Raport nie zawiera kartoteki klientów, powiązań z klientami ani profilu firmy. Oryginalna nazwa projektu, notatki, opisy i inne swobodne teksty projektu są pomijane lub zastępowane neutralnymi wartościami; dotyczy to także własnych nazw materiałów i wyposażenia. Nie dołączamy zdjęć, prywatnych tekstur, zewnętrznych modeli, ścieżek do plików, danych synchronizacji ani logów innych projektów.
+    </p>
+    <h3 id="support-pricing">
+     Ceny testowe i opcjonalne dane kosztorysowe
+    </h3>
+    <p>
+     Po dołączeniu danych diagnostycznych projektu rzeczywiste ceny materiałów, okuć, wyposażenia i operacji, stawki robocizny, marże oraz wartości własnych pozycji kosztorysu nie są domyślnie udostępniane. W kopii diagnostycznej są zastępowane fikcyjnymi wartościami testowymi. Dotyczy to także cen wariantów, zagnieżdżonych informacji cenowych i zapisanych kopii parametrów użytych elementów.
+    </p>
+    <p>
+     Wartości testowe są ustalane według stałych reguł, odpowiednio do kategorii elementu i jednostki rozliczeniowej. Są niezależne od Twoich rzeczywistych kwot — nie stanowią ich procentu ani modyfikacji. Raport może zachowywać walutę projektu i sposób naliczania kosztów. Obliczenia oparte na cenach testowych nie przedstawiają Twojej rzeczywistej wyceny ani oferty.
+    </p>
+    <p>
+     Rzeczywiste dane kosztorysowe zostaną dołączone tylko po osobnym włączeniu opcji „Dołącz dane kosztorysowe (ceny i stawki)”, dostępnej po wybraniu danych diagnostycznych projektu. Opcja jest domyślnie wyłączona. Obejmuje ceny i stawki używane w projekcie, robociznę, marżę, własne pozycje kosztorysu oraz ustawienia wyceny. Nie przywraca pominiętych danych klientów ani oryginalnych tekstów. Wyłączenie dołączania danych projektu wyłącza także dołączanie rzeczywistych danych kosztorysowych.
+    </p>
+    <p>
+     Wartości testowe ułatwiają sprawdzanie działania projektu, obliczeń i generowania dokumentów, ale mogą uniemożliwić odtworzenie błędu zależnego od konkretnych kwot, zaokrągleń lub brakujących cen. Przy takim zgłoszeniu możesz zdecydować o dołączeniu rzeczywistych danych kosztorysowych. Raport rozróżnia wartości testowe od rzeczywistych danych cenowych.
+    </p>
+    <h3 id="support-delivery">
+     Wysyłanie i wykorzystanie zgłoszenia
+    </h3>
+    <p>
+     Raport JSON jest przygotowywany na urządzeniu na podstawie odrębnej kopii diagnostycznej. Podstawienie cen testowych i filtrowanie danych nie zmieniają oryginalnego projektu, biblioteki ani ustawień cenowych użytkownika. Dopiero po wybraniu kontaktu z pomocą techniczną aplikacja otwiera wiadomość e-mail lub systemowy arkusz udostępniania z załącznikiem. Możesz zrezygnować z wysłania. Samo włączenie opcji nie wysyła danych; raport nie jest automatycznie przekazywany do Firebase.
+    </p>
+    <p>
+     Zgłoszenie otrzymuje administrator aplikacji. Korespondencja obejmuje adres nadawcy, wpisaną treść oraz przesłane załączniki. Wykorzystujemy je do obsługi zgłoszenia, odtworzenia problemu i sprawdzenia poprawki, a nie do publikowania projektu ani celów marketingowych. Obsługa skrzynki kontaktowej odbywa się przez Gmail (Google); wiadomość i pliki są również przetwarzane przez dostawców poczty lub usługi udostępniania, z których korzystasz.
+    </p>
+    <h3 id="support-filtering-limits">
+     Ograniczenia filtrowania danych
+    </h3>
+    <p>
+     Nie należy traktować raportu jako w pełni anonimowego. Zachowuje techniczny identyfikator projektu oraz identyfikatory elementów potrzebne do odtworzenia ich powiązań. Sama konfiguracja mebla lub kuchni może stanowić informację poufną.
+    </p>
+    <p>
+     Automatyczne filtrowanie dotyczy danych projektu i jego zależności w raporcie diagnostycznym. Nie usuwa informacji wpisanych przez Ciebie w opisie problemu ani treści ręcznie dodanych zrzutów ekranu, nagrań, PDF, CSV, zwykłych eksportów projektu czy kopii zapasowych. Przed wysłaniem sprawdź te treści i udostępniaj tylko informacje potrzebne do wyjaśnienia problemu. Raport diagnostyczny nie zastępuje zwykłego eksportu projektu ani kopii zapasowej.
     </p>
     <h2 id="firebase">
      Diagnostyka, analityka i zdalna konfiguracja Firebase
@@ -238,7 +280,13 @@
       Funkcja „Wyczyść dane” usuwa lokalne dane aplikacji, ale nie usuwa danych z iCloud. Dane pozostawione w chmurze mogą wrócić po ponownym włączeniu synchronizacji. Funkcja ta nie usuwa też plików wcześniej zapisanych lub wysłanych poza aplikację.
      </p>
      <p>
-      Wiadomości i załączniki przekazane do supportu pozostają poza mechanizmem lokalnego czyszczenia danych. W sprawie ich przechowywania lub usunięcia skontaktuj się z nami. Okresy przechowywania danych Firebase zależą od usługi oraz ustawień projektu Firebase; usunięcie projektu mebla w aplikacji nie jest żądaniem usunięcia danych diagnostycznych lub analitycznych.
+      Tymczasowe pliki przygotowane do zgłoszenia są usuwane po zakończeniu lub anulowaniu udostępniania oraz przy zamknięciu formularza. Pozostałości po przerwaniu działania aplikacji, starsze niż 24 godziny, są usuwane przy następnym przygotowaniu pliku. Nie oznacza to usuwania kopii zapisanych w poczcie, Plikach lub innych usługach.
+     </p>
+     <p>
+      Wiadomości i załączniki już przekazane do pomocy technicznej pozostają poza lokalnym mechanizmem czyszczenia danych. Otrzymane załączniki diagnostyczne i ich kopie robocze przechowujemy przez czas potrzebny do obsługi zgłoszenia, odtworzenia problemu i sprawdzenia poprawki, a następnie usuwamy, gdy nie są już potrzebne do tych celów. Treść korespondencji przechowujemy przez czas niezbędny do obsługi sprawy. Dłuższe przechowywanie ograniczamy do danych i okresu niezbędnych do wykonania obowiązku prawnego lub ustalenia, dochodzenia albo obrony roszczeń, jeżeli taka potrzeba wystąpi. W sprawie przechowywania lub usunięcia danych napisz na adres kontaktowy podany na stronie.
+     </p>
+     <p>
+      Okresy przechowywania danych Firebase zależą od usługi oraz ustawień projektu Firebase; usunięcie projektu mebla w aplikacji nie jest żądaniem usunięcia danych diagnostycznych lub analitycznych.
      </p>
     </section>
     <h2>
@@ -284,6 +332,14 @@
      <span class="history-label">
       Dokumenty dla wcześniejszych wersji:
      </span>
+     <a href="../../archive/2026-10-07/pl/terms-of-use/">
+      Warunki korzystania przed 1.3.0 — 7 października 2026
+     </a>
+     ·
+     <a href="../../archive/2026-10-07/pl/privacy-policy/">
+      Polityka prywatności przed 1.3.0 — 7 października 2026
+     </a>
+     ·
      <a href="../../archive/2026-06-14/pl/privacy-policy/">
       Polityka prywatności
      </a>

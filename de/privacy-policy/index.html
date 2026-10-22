@@ -25,7 +25,7 @@
   <link href="https://furnitureplannerapp.github.io/fr/privacy-policy/" hreflang="fr" rel="alternate"/>
   <link href="https://furnitureplannerapp.github.io/privacy-policy/" hreflang="x-default" rel="alternate"/>
  </head>
- <body class="document-page" data-document-updated="2026-10-07">
+ <body class="document-page" data-document-updated="2026-10-22" data-document-effective="2026-10-22">
   <a class="skip-link" href="#content">
    Zum Inhalt springen
   </a>
@@ -57,7 +57,7 @@
      Datenschutz­erklärung
     </h1>
     <p class="document-meta">
-     Aktualisiert: <time datetime="2026-10-07">7. Oktober 2026</time>
+     Aktualisiert und gültig ab: <time datetime="2026-10-22">22. Oktober 2026</time>
     </p>
     <p class="lead">
      Möbel- und Küchenprojekte werden lokal gespeichert. Die iCloud-Synchronisierung ist optional und standardmäßig ausgeschaltet. Firebase dient für Absturzberichte, Nutzungsanalysen und Remote-Konfiguration; diese Dienste werden unten erläutert.
@@ -142,6 +142,9 @@
      <p>
       Du teilst Dateien über das systemeigene Teilen-Menü und wählst Empfänger und Speicherort. In Dateien, iCloud Drive oder anderen Diensten gespeicherte Kopien sind von der Synchronisierung in der App unabhängig und liegen außerhalb ihrer Kontrolle. Das Löschen von Daten in der App entfernt diese Kopien nicht.
      </p>
+     <p>
+      Der oben beschriebene normale Projektexport und die vollständige Sicherung verwenden nicht die Filterung des Diagnoseberichts. Den gesonderten Datenumfang von „Problem melden“ ab Version 1.3.0 beschreibt der Abschnitt <a href="#support-data">Kontakt zum Support</a>.
+     </p>
     </section>
     <h2>
      Zwecke der Datenverarbeitung
@@ -162,13 +165,52 @@
      Kontakt zum Support
     </h2>
     <p>
-     Supportanfragen versendest du selbst per E-Mail oder über die systemeigene Teilen-Funktion. Das Anhängen von Projektdaten ist standardmäßig ausgeschaltet. Wenn du es aktivierst, enthält der Anhang das vollständige Projekt, deine Problembeschreibung, Geräte- und App-Informationen sowie Diagnosedaten zur App-Nutzung. Auch ohne Projektanhang enthält die Nachricht technische Informationen, die bei der Fehlersuche helfen.
+     Die folgende Beschreibung der Diagnoseberichte gilt für die Funktion „Problem melden“ ab Version 1.3.0. In älteren Versionen kann ein Bericht mehr Daten enthalten, einschließlich des vollständigen Projekts und der Preise. Wir empfehlen, die App vor dem Teilen von Daten zu aktualisieren.
     </p>
     <p>
-     Diagnosedaten und Anhänge werden nicht vollständig automatisch anonymisiert. Sie können Projektinhalte und andere vertrauliche Informationen enthalten. Prüfe Nachricht und Anhänge vor dem Versand und entferne Daten, die zur Lösung des Problems nicht benötigt werden.
+     Das Anhängen von Projektdiagnosedaten ist freiwillig und standardmäßig ausgeschaltet. Ohne Aktivierung hängen wir weder die Projektkonfiguration noch die zugehörigen Bibliotheksdefinitionen oder Preiseinstellungen an. Eine Anfrage kann weiterhin deine Problembeschreibung, App-Version und Build, Gerätemodell, Betriebssystemversion, Erstellungszeit des Berichts sowie den Bildschirm- oder Wiederherstellungskontext nach einem Absturz enthalten. Das Gerätemodell bezeichnet den Hardwaretyp, keine dauerhafte Gerätekennung.
+    </p>
+    <h3 id="support-diagnostic-scope">
+     Welche Daten der Bericht enthält
+    </h3>
+    <p>
+     Wenn du Projektdiagnosedaten einschließt, enthält der Bericht die technische Konfiguration des Möbels oder der Küche: Maße, Geometrie, Wände, Module, Schrägen, Unterteilungen, Fronten, Geräte, Ausstattung sowie Konstruktions- und Produktionseinstellungen. Hinzu kommen Definitionen der verwendeten Materialien und Beschläge sowie deren Abhängigkeiten, auch aus deiner eigenen Bibliothek. Nicht enthalten sind die gesamte Bibliothek oder Inhalte anderer, nicht zugehöriger Projekte.
     </p>
     <p>
-     Die App versendet Supportanfragen nicht automatisch — du entscheidest über den Versand. Die Korrespondenz umfasst Absenderadresse, übermittelte Inhalte und Anhänge. Wir verwenden sie zur Bearbeitung der Anfrage.
+     Der Bericht enthält keine Kundendatensätze, Kundenverknüpfungen oder Firmenprofile. Der ursprüngliche Projektname, Notizen, Beschreibungen und andere Freitextfelder des Projekts werden weggelassen oder durch neutrale Werte ersetzt; dies gilt auch für eigene Material- und Ausstattungsnamen. Fotos, private Texturen, externe Modelle, Dateipfade, Synchronisierungsdaten und Protokolle anderer Projekte werden nicht angehängt.
+    </p>
+    <h3 id="support-pricing">
+     Testpreise und optionale Kalkulationsdaten
+    </h3>
+    <p>
+     Wenn Projektdiagnosedaten angehängt werden, werden deine tatsächlichen Preise für Materialien, Beschläge, Ausstattung und Bearbeitungsschritte, Arbeitskostensätze, Margen und Beträge eigener Kalkulationspositionen standardmäßig nicht weitergegeben. In der Diagnosekopie werden sie durch fiktive Testwerte ersetzt. Dies gilt auch für Variantenpreise, verschachtelte Preisinformationen und gespeicherte Kopien der Parameter verwendeter Elemente.
+    </p>
+    <p>
+     Testwerte werden nach festen Regeln passend zur Elementkategorie und Abrechnungseinheit festgelegt. Sie sind unabhängig von deinen tatsächlichen Beträgen und werden weder als Prozentsatz noch als Abwandlung dieser Beträge berechnet. Der Bericht kann die Projektwährung und die Berechnungsmethoden beibehalten. Berechnungen auf Basis von Testpreisen entsprechen nicht deiner tatsächlichen Kalkulation oder deinem Angebot.
+    </p>
+    <p>
+     Tatsächliche Kalkulationsdaten werden nur angehängt, wenn du zusätzlich die Option für Kalkulationsdaten (Preise und Sätze) aktivierst. Sie ist erst nach Auswahl der Projektdiagnosedaten verfügbar und standardmäßig ausgeschaltet. Sie umfasst die im Projekt verwendeten Preise und Sätze, Arbeitskosten, Margen, eigene Kalkulationspositionen und Kalkulationseinstellungen. Ausgeschlossene Kundendaten und ursprüngliche Texte werden dadurch nicht wiederhergestellt. Wenn du Projektdaten deaktivierst, wird auch das Anhängen tatsächlicher Kalkulationsdaten deaktiviert.
+    </p>
+    <p>
+     Testwerte erleichtern die Prüfung der Projektfunktionen, Berechnungen und Dokumenterstellung. Sie können jedoch verhindern, dass ein von bestimmten Beträgen, Rundungen oder fehlenden Preisen abhängiger Fehler reproduziert wird. Bei einer solchen Meldung kannst du dich für das Anhängen tatsächlicher Kalkulationsdaten entscheiden. Der Bericht unterscheidet Testwerte von tatsächlichen Preisdaten.
+    </p>
+    <h3 id="support-delivery">
+     Versand und Verwendung der Anfrage
+    </h3>
+    <p>
+     Der JSON-Bericht wird auf deinem Gerät anhand einer separaten Diagnosekopie erstellt. Das Ersetzen von Preisen durch Testwerte und das Filtern von Daten ändern weder dein ursprüngliches Projekt noch deine Bibliothek oder Preiseinstellungen. Erst nach Auswahl des Kontakts zum Support öffnet die App eine E-Mail oder die systemeigene Teilen-Funktion mit dem Anhang. Du kannst den Versand abbrechen. Das Aktivieren einer Option allein sendet keine Daten; der Bericht wird nicht automatisch an Firebase übertragen.
+    </p>
+    <p>
+     Die Anfrage erhält der für die App Verantwortliche. Die Korrespondenz umfasst die Absenderadresse, eingegebene Texte und übermittelte Anhänge. Wir verwenden diese zur Bearbeitung der Anfrage, Reproduktion des Problems und Prüfung einer Korrektur, nicht zur Veröffentlichung des Projekts oder für Marketing. Das Kontaktpostfach nutzt Gmail (Google); auch deine E-Mail- oder Freigabedienstanbieter verarbeiten die Nachricht und Dateien.
+    </p>
+    <h3 id="support-filtering-limits">
+     Grenzen der Datenfilterung
+    </h3>
+    <p>
+     Der Bericht ist nicht garantiert anonym. Er behält die technische Projektkennung und die zur Wiederherstellung der Beziehungen benötigten Elementkennungen bei. Auch die Möbel- oder Küchenkonfiguration selbst kann vertraulich sein.
+    </p>
+    <p>
+     Die automatische Filterung gilt für Projektdaten und zugehörige Bibliotheksdefinitionen im Diagnosebericht. Sie entfernt keine Informationen aus deiner Problembeschreibung oder aus manuell angehängten Screenshots, Aufnahmen, PDF-/CSV-Dateien, normalen Projektexporten oder Sicherungen. Prüfe diese Inhalte vor dem Versand und teile nur Informationen, die zur Klärung nötig sind. Ein Diagnosebericht ersetzt keinen normalen Projektexport und keine Sicherung.
     </p>
     <h2 id="firebase">
      Firebase-Diagnose, Analyse und Remote-Konfiguration
@@ -238,7 +280,13 @@
       „Daten löschen“ entfernt lokale App-Daten, aber keine Daten aus iCloud. In der Cloud verbliebene Daten können nach dem erneuten Aktivieren der Synchronisierung wieder erscheinen. Zuvor außerhalb der App gespeicherte oder versendete Dateien werden ebenfalls nicht gelöscht.
      </p>
      <p>
-      An den Support gesendete Nachrichten und Anhänge liegen außerhalb der lokalen Datenlöschfunktion. Kontaktiere uns zu ihrer Aufbewahrung oder Löschung. Firebase-Aufbewahrungsfristen hängen vom Dienst und den Firebase-Projekteinstellungen ab; das Löschen eines Möbelprojekts in der App ist kein Antrag auf Löschung von Diagnose- oder Analysedaten.
+      Temporäre Dateien für eine Anfrage werden nach Abschluss oder Abbruch des Teilens sowie beim Schließen des Formulars entfernt. Nach einer Unterbrechung der App verbliebene Dateien, die älter als 24 Stunden sind, werden bei der nächsten Dateivorbereitung gelöscht. Kopien in E-Mails, Dateien oder anderen Diensten werden dadurch nicht gelöscht.
+     </p>
+     <p>
+      Bereits an den Support gesendete Nachrichten und Anhänge liegen außerhalb der lokalen Datenlöschung. Erhaltene Diagnoseanhänge und Arbeitskopien bewahren wir so lange auf, wie es für die Bearbeitung der Anfrage, die Reproduktion des Problems und die Prüfung einer Korrektur erforderlich ist; danach löschen wir sie, sobald sie für diese Zwecke nicht mehr benötigt werden. Die Korrespondenz bewahren wir so lange auf, wie es für die Bearbeitung der Angelegenheit nötig ist. Eine längere Aufbewahrung beschränkt sich auf die Daten und die Dauer, die für gesetzliche Pflichten oder die Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen erforderlich sind, sofern ein solcher Bedarf besteht. Bei Fragen zur Speicherung oder Löschung kontaktiere uns über die auf dieser Seite genannte Adresse.
+     </p>
+     <p>
+      Firebase-Aufbewahrungsfristen hängen vom Dienst und den Firebase-Projekteinstellungen ab; das Löschen eines Möbelprojekts in der App ist kein Antrag auf Löschung von Diagnose- oder Analysedaten.
      </p>
     </section>
     <h2>
@@ -284,6 +332,14 @@
      <span class="history-label">
       Dokumente für frühere Versionen:
      </span>
+     <a href="../../archive/2026-10-07/de/terms-of-use/">
+      Nutzungsbedingungen vor 1.3.0 — 7. Oktober 2026
+     </a>
+     ·
+     <a href="../../archive/2026-10-07/de/privacy-policy/">
+      Datenschutzerklärung vor 1.3.0 — 7. Oktober 2026
+     </a>
+     ·
      <a href="../../archive/2026-06-14/de/privacy-policy/">
       Datenschutzerklärung
      </a>

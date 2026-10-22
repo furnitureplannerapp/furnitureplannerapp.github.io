@@ -25,7 +25,7 @@
   <link href="https://furnitureplannerapp.github.io/fr/privacy-policy/" hreflang="fr" rel="alternate"/>
   <link href="https://furnitureplannerapp.github.io/privacy-policy/" hreflang="x-default" rel="alternate"/>
  </head>
- <body class="document-page" data-document-updated="2026-10-07">
+ <body class="document-page" data-document-updated="2026-10-22" data-document-effective="2026-10-22">
   <a class="skip-link" href="#content">
    Ir al contenido
   </a>
@@ -57,7 +57,7 @@
      Política de privacidad
     </h1>
     <p class="document-meta">
-     Actualizado: <time datetime="2026-10-07">7 de octubre de 2026</time>
+     Actualización y entrada en vigor: <time datetime="2026-10-22">22 de octubre de 2026</time>
     </p>
     <p class="lead">
      Los proyectos de muebles y cocinas se guardan localmente. La sincronización con iCloud es opcional y está desactivada por defecto. Firebase gestiona informes de fallos, analítica de uso y configuración remota; estos servicios se describen a continuación.
@@ -142,6 +142,9 @@
      <p>
       Compartes archivos mediante el menú del sistema y eliges el destinatario y el destino. Las copias guardadas en Archivos, iCloud Drive u otros servicios son independientes de la sincronización de la app y quedan fuera de su control. Eliminar datos en la app no elimina esas copias.
      </p>
+     <p>
+      La exportación normal del proyecto y la copia de seguridad completa descritas arriba no utilizan el filtrado del informe de diagnóstico. El alcance específico de los datos de la función para informar de un problema desde la versión 1.3.0 se explica en <a href="#support-data">Contacto con soporte</a>.
+     </p>
     </section>
     <h2>
      Finalidades del tratamiento de datos
@@ -162,13 +165,52 @@
      Contacto con soporte
     </h2>
     <p>
-     Tú envías las solicitudes de soporte por correo o mediante las opciones de compartir del sistema. Adjuntar datos del proyecto está desactivado por defecto. Al activarlo, el adjunto contiene el proyecto completo, la descripción del problema, información del dispositivo y la app, y datos de diagnóstico sobre su funcionamiento. Sin adjuntar el proyecto, el mensaje sigue incluyendo información técnica útil para resolver el problema.
+     La siguiente descripción de los informes de diagnóstico se aplica a la función para informar de un problema desde la versión 1.3.0. En versiones anteriores, un informe puede contener más datos, incluidos el proyecto completo y los precios. Recomendamos actualizar la app antes de compartir datos.
     </p>
     <p>
-     Los datos de diagnóstico y los adjuntos no se anonimizan automáticamente en su totalidad. Pueden contener información del proyecto y otros datos confidenciales. Revisa el mensaje y los adjuntos antes de enviarlos y elimina los datos que no sean necesarios para resolver el problema.
+     Adjuntar datos de diagnóstico del proyecto es opcional y está desactivado por defecto. Sin activar esta opción, no adjuntamos la configuración del proyecto, las definiciones de biblioteca de las que depende ni los ajustes de precios. La solicitud puede seguir incluyendo la descripción del problema, la versión y compilación de la app, el modelo de dispositivo, la versión del sistema, la fecha y hora de creación del informe y el contexto de la pantalla o de recuperación tras un fallo. El modelo de dispositivo identifica el tipo de hardware, no un identificador permanente del dispositivo.
+    </p>
+    <h3 id="support-diagnostic-scope">
+     Qué datos contiene el informe
+    </h3>
+    <p>
+     Al activar la opción de adjuntar datos de diagnóstico del proyecto, el informe contiene la configuración técnica del mueble o la cocina: dimensiones, geometría, paredes, módulos, pendientes, divisiones, frentes, electrodomésticos, equipamiento y ajustes de construcción y producción. También incluye las definiciones de los materiales y herrajes utilizados y sus dependencias, incluidas las entradas de tu biblioteca personalizada. No incluye toda la biblioteca ni el contenido de otros proyectos no relacionados.
     </p>
     <p>
-     La app no envía solicitudes de soporte automáticamente: tú decides si las envías. La correspondencia incluye la dirección del remitente, el contenido enviado y los adjuntos. La utilizamos para atender la solicitud.
+     El informe no incluye registros de clientes, vínculos con clientes ni el perfil de empresa. El nombre original del proyecto, las notas, descripciones y otros campos de texto libre del proyecto se omiten o sustituyen por valores neutros; esto también se aplica a los nombres personalizados de materiales y equipamiento. No adjuntamos fotos, texturas privadas, modelos externos, rutas de archivos, datos de sincronización ni registros de actividad de otros proyectos.
+    </p>
+    <h3 id="support-pricing">
+     Precios de prueba y datos opcionales del presupuesto
+    </h3>
+    <p>
+     Al adjuntar datos de diagnóstico del proyecto, tus precios reales de materiales, herrajes, equipamiento y operaciones, tarifas de mano de obra, márgenes e importes de partidas personalizadas del presupuesto no se comparten por defecto. En la copia de diagnóstico se sustituyen por valores de prueba ficticios. Esto también se aplica a los precios de variantes, la información de precios anidada y las copias guardadas de los parámetros de los elementos utilizados.
+    </p>
+    <p>
+     Los valores de prueba siguen reglas fijas adecuadas a la categoría del elemento y a la unidad de cálculo. Son independientes de tus importes reales: no se calculan como un porcentaje ni una modificación de ellos. El informe puede conservar la moneda del proyecto y los métodos de cálculo. Los cálculos basados en precios de prueba no representan tu presupuesto ni tu oferta reales.
+    </p>
+    <p>
+     Los datos reales del presupuesto solo se adjuntan si activas por separado la opción de incluir datos del presupuesto (precios y tarifas), disponible después de seleccionar los datos de diagnóstico del proyecto. Está desactivada por defecto. Abarca los precios y tarifas utilizados en el proyecto, la mano de obra, el margen, las partidas personalizadas y los ajustes de cálculo. No recupera los datos de clientes ni los textos originales excluidos. Desactivar los datos del proyecto también desactiva la inclusión de los datos reales del presupuesto.
+    </p>
+    <p>
+     Los valores de prueba ayudan a comprobar el funcionamiento del proyecto, los cálculos y la generación de documentos, pero pueden impedir reproducir un error que dependa de importes concretos, redondeos o precios que falten. Para ese tipo de problema, puedes decidir incluir los datos reales del presupuesto. El informe distingue los valores de prueba de los datos de precios reales.
+    </p>
+    <h3 id="support-delivery">
+     Envío y uso de la solicitud
+    </h3>
+    <p>
+     El informe JSON se prepara en tu dispositivo a partir de una copia de diagnóstico independiente. Sustituir los precios por valores de prueba y filtrar los datos no modifica tu proyecto original, tu biblioteca ni tus ajustes de precios. Solo al elegir contactar con soporte la app abre un correo o las opciones de compartir del sistema con el adjunto. Puedes cancelar el envío. Activar una opción no envía datos por sí solo; el informe no se transmite automáticamente a Firebase.
+    </p>
+    <p>
+     El responsable del tratamiento de la app recibe la solicitud. La correspondencia incluye la dirección del remitente, el texto introducido y los adjuntos enviados. Los utilizamos para atender la solicitud, reproducir el problema y verificar una corrección, no para publicar el proyecto ni para marketing. El buzón de contacto utiliza Gmail (Google); tus proveedores de correo o del servicio para compartir también procesan el mensaje y los archivos.
+    </p>
+    <h3 id="support-filtering-limits">
+     Límites del filtrado de datos
+    </h3>
+    <p>
+     No se garantiza que el informe sea anónimo. Conserva el identificador técnico del proyecto y los identificadores de elementos necesarios para reproducir sus relaciones. La propia configuración del mueble o la cocina puede ser confidencial.
+    </p>
+    <p>
+     El filtrado automático se aplica a los datos del proyecto y sus dependencias en el informe de diagnóstico. No elimina la información que escribas en la descripción del problema ni el contenido de capturas, grabaciones, PDF, CSV, exportaciones normales de proyectos o copias de seguridad adjuntados manualmente. Revísalos antes de enviarlos y comparte solo lo necesario para explicar el problema. El informe de diagnóstico no sustituye una exportación normal ni una copia de seguridad.
     </p>
     <h2 id="firebase">
      Diagnóstico, analítica y configuración remota de Firebase
@@ -238,7 +280,13 @@
       «Borrar datos» elimina los datos locales de la app, pero no los de iCloud. Los datos que permanezcan en la nube pueden reaparecer al activar de nuevo la sincronización. Esta función tampoco elimina archivos guardados o enviados previamente fuera de la app.
      </p>
      <p>
-      Los mensajes y adjuntos enviados a soporte quedan fuera del mecanismo de borrado local. Contacta con nosotros para consultar su conservación o eliminación. Los periodos de conservación de Firebase dependen del servicio y de los ajustes del proyecto Firebase; borrar un proyecto de mueble en la app no equivale a solicitar la eliminación de datos de diagnóstico o analítica.
+      Los archivos temporales preparados para una solicitud se eliminan al finalizar o cancelar el uso compartido y al cerrar el formulario. Los archivos que queden tras una interrupción de la app y tengan más de 24 horas se eliminan la próxima vez que se prepare un archivo. Esto no borra las copias almacenadas en el correo, Archivos u otros servicios.
+     </p>
+     <p>
+      Los mensajes y adjuntos ya enviados a soporte quedan fuera del borrado local. Conservamos los adjuntos de diagnóstico recibidos y sus copias de trabajo durante el tiempo necesario para atender la solicitud, reproducir el problema y verificar una corrección, y los eliminamos cuando dejan de ser necesarios para esos fines. Conservamos la correspondencia durante el tiempo necesario para gestionar el asunto. Cualquier conservación adicional se limita a los datos y al periodo necesarios para cumplir una obligación legal o formular, ejercer o defender reclamaciones, si surge esa necesidad. Para consultar la conservación o eliminación, escribe a la dirección de contacto de esta página.
+     </p>
+     <p>
+      Los periodos de conservación de Firebase dependen del servicio y de los ajustes del proyecto Firebase; borrar un proyecto de mueble en la app no equivale a solicitar la eliminación de datos de diagnóstico o analítica.
      </p>
     </section>
     <h2>
@@ -284,6 +332,14 @@
      <span class="history-label">
       Documentos para versiones anteriores:
      </span>
+     <a href="../../archive/2026-10-07/es/terms-of-use/">
+      Condiciones de uso anteriores a 1.3.0 — 7 de octubre de 2026
+     </a>
+     ·
+     <a href="../../archive/2026-10-07/es/privacy-policy/">
+      Política de privacidad anterior a 1.3.0 — 7 de octubre de 2026
+     </a>
+     ·
      <a href="../../archive/2026-06-14/es/privacy-policy/">
       Política de privacidad
      </a>

@@ -25,7 +25,7 @@
   <link href="https://furnitureplannerapp.github.io/fr/privacy-policy/" hreflang="fr" rel="alternate"/>
   <link href="https://furnitureplannerapp.github.io/privacy-policy/" hreflang="x-default" rel="alternate"/>
  </head>
- <body class="document-page" data-document-updated="2026-10-07">
+ <body class="document-page" data-document-updated="2026-10-22" data-document-effective="2026-10-22">
   <a class="skip-link" href="#content">
    Skip to content
   </a>
@@ -57,7 +57,7 @@
      Privacy Policy
     </h1>
     <p class="document-meta">
-     Updated: <time datetime="2026-10-07">7 October 2026</time>
+     Updated and effective from: <time datetime="2026-10-22">22 October 2026</time>
     </p>
     <p class="lead">
      Furniture and kitchen projects are stored locally. iCloud synchronization is optional and off by default. Firebase handles crash reports, usage analytics and remote configuration; these services are described below.
@@ -142,6 +142,9 @@
      <p>
       You share files using the system sharing menu and choose the recipient and destination. Copies saved in Files, iCloud Drive or other services are independent of in-app synchronization and remain outside the app’s control. Deleting data in the app does not delete these copies.
      </p>
+     <p>
+      The regular project export and full backup described above do not use the diagnostic report’s filtering. The separate data scope of “Report a problem” from version 1.3.0 is described under <a href="#support-data">Contacting support</a>.
+     </p>
     </section>
     <h2>
      Purposes of data processing
@@ -162,13 +165,52 @@
      Contacting support
     </h2>
     <p>
-     You send support requests yourself through email or system sharing. Including project data is off by default. When enabled, the attachment contains the complete project, your problem description, device and app information, and diagnostic information about app activity. Without a project attachment, the message still includes technical information useful for troubleshooting.
+     The following description of diagnostic reports applies to the “Report a problem” feature from version 1.3.0. In earlier versions, a report may contain a broader range of data, including the complete project and prices. We recommend updating the app before sharing data.
     </p>
     <p>
-     Diagnostic information and attachments are not automatically anonymized in full. They may contain project content and other confidential information. Review the message and attachments before sending and remove data that is not needed to resolve the issue.
+     Including project diagnostic data is optional and off by default. Without enabling it, we do not attach the project configuration, its library dependencies or pricing settings. A request may still contain your problem description, app version and build, device model, operating system version, report creation time, and screen or crash-recovery context. The device model identifies the type of hardware, not a persistent device identifier.
+    </p>
+    <h3 id="support-diagnostic-scope">
+     What the report contains
+    </h3>
+    <p>
+     When you enable the option to include project diagnostic data, the report contains the technical configuration of the furniture or kitchen: dimensions, geometry, walls, modules, slopes, partitions, fronts, appliances, fittings, and construction and production settings. It also includes definitions of the materials and hardware used and their dependencies, including custom library items. It does not include your entire library or the contents of other, unrelated projects.
     </p>
     <p>
-     The app does not send a support request automatically — you decide whether to send it. Correspondence includes the sender’s address, submitted content and attachments. We use it to address the support request.
+     The report does not include client records, links to clients or your business profile. The original project name, notes, descriptions and other free-text project fields are omitted or replaced with neutral values; this also applies to custom material and equipment names. We do not attach photos, private textures, external models, file paths, synchronization data or logs from other projects.
+    </p>
+    <h3 id="support-pricing">
+     Test prices and optional cost-estimate data
+    </h3>
+    <p>
+     When project diagnostic data is attached, your actual material, hardware, equipment and operation prices, labor rates, margins and custom estimate amounts are not shared by default. In the diagnostic copy, they are replaced with fictitious test values. This also covers variant prices, nested pricing information and saved copies of the parameters of the items used.
+    </p>
+    <p>
+     Test values follow fixed rules appropriate to the item category and pricing unit; they are independent of your actual amounts, not a percentage or modification of them. The report can retain the project currency and calculation methods. Calculations based on test prices do not represent your actual estimate or offer.
+    </p>
+    <p>
+     Actual cost-estimate data is included only if you separately enable the option to include cost-estimate data (prices and rates), available after selecting project diagnostic data. It is off by default. It covers the prices and rates used in the project, labor, margin, custom estimate items and pricing settings. It does not restore excluded client data or original text. Turning off project data also turns off the inclusion of actual cost-estimate data.
+    </p>
+    <p>
+     Test values help us investigate the operation of the project, calculations and document generation, but may prevent us from reproducing an issue that depends on specific amounts, rounding or missing prices. For such an issue, you can choose to include actual cost-estimate data. The report distinguishes test values from actual pricing data.
+    </p>
+    <h3 id="support-delivery">
+     Sending and using a support request
+    </h3>
+    <p>
+     The JSON report is prepared on your device using a separate diagnostic copy. Replacing prices with test values and filtering data do not change your original project, library or pricing settings. Only after you choose to contact support does the app open an email message or system sharing with the attachment. You can cancel sending. Enabling an option alone does not send data; the report is not automatically sent to Firebase.
+    </p>
+    <p>
+     The app’s data controller receives the request. Correspondence includes the sender’s address, text entered and attachments sent. We use these to handle the request, reproduce the problem and verify a fix, not to publish the project or for marketing. The contact mailbox uses Gmail (Google); your email or sharing service providers also process the message and files.
+    </p>
+    <h3 id="support-filtering-limits">
+     Limits of data filtering
+    </h3>
+    <p>
+     The report is not guaranteed to be anonymous. It retains the technical project identifier and the item identifiers needed to reproduce their relationships. The furniture or kitchen configuration itself may be confidential.
+    </p>
+    <p>
+     Automatic filtering applies to project data and its dependencies in the diagnostic report. It does not remove information you enter in the problem description or the contents of manually attached screenshots, recordings, PDFs, CSVs, ordinary project exports or backups. Review these before sending and share only what is needed to explain the issue. A diagnostic report does not replace a regular project export or backup.
     </p>
     <h2 id="firebase">
      Firebase diagnostics, analytics and remote configuration
@@ -238,7 +280,13 @@
       “Clear data” removes local app data but does not remove data from iCloud. Data left in the cloud may return when synchronization is enabled again. This feature also does not delete files previously saved or sent outside the app.
      </p>
      <p>
-      Messages and attachments sent to support are outside the local data-clearing mechanism. Contact us about their retention or deletion. Firebase retention periods depend on the service and Firebase project settings; deleting a furniture project in the app is not a request to delete diagnostic or analytics data.
+      Temporary files prepared for a request are removed when sharing finishes or is cancelled and when the form is closed. Files left after the app is interrupted are removed the next time a file is prepared if they are more than 24 hours old. This does not delete copies stored in email, Files or other services.
+     </p>
+     <p>
+      Messages and attachments already sent to support are outside the local data-clearing mechanism. We retain received diagnostic attachments and working copies for the time needed to handle the request, reproduce the problem and verify a fix, then delete them once they are no longer needed for those purposes. We retain correspondence for as long as necessary to handle the matter. Any longer retention is limited to the data and time necessary to meet a legal obligation or establish, exercise or defend legal claims, if such a need arises. Contact us using the address on this page about retention or deletion.
+     </p>
+     <p>
+      Firebase retention periods depend on the service and Firebase project settings; deleting a furniture project in the app is not a request to delete diagnostic or analytics data.
      </p>
     </section>
     <h2>
@@ -284,6 +332,14 @@
      <span class="history-label">
       Documents for earlier versions:
      </span>
+     <a href="../archive/2026-10-07/terms-of-use/">
+      Terms of Use before 1.3.0 — 7 October 2026
+     </a>
+     ·
+     <a href="../archive/2026-10-07/privacy-policy/">
+      Privacy policy before 1.3.0 — 7 October 2026
+     </a>
+     ·
      <a href="../archive/2026-06-14/privacy-policy/">
       Privacy Policy
      </a>

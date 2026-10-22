@@ -25,7 +25,7 @@
   <link href="https://furnitureplannerapp.github.io/fr/privacy-policy/" hreflang="fr" rel="alternate"/>
   <link href="https://furnitureplannerapp.github.io/privacy-policy/" hreflang="x-default" rel="alternate"/>
  </head>
- <body class="document-page" data-document-updated="2026-10-07">
+ <body class="document-page" data-document-updated="2026-10-22" data-document-effective="2026-10-22">
   <a class="skip-link" href="#content">
    Aller au contenu
   </a>
@@ -57,7 +57,7 @@
      Politique de confidentialité
     </h1>
     <p class="document-meta">
-     Mise à jour: <time datetime="2026-10-07">7 octobre 2026</time>
+     Mise à jour et entrée en vigueur : <time datetime="2026-10-22">22 octobre 2026</time>
     </p>
     <p class="lead">
      Les projets de meubles et de cuisines sont enregistrés localement. La synchronisation iCloud est facultative et désactivée par défaut. Firebase assure les rapports de plantage, l’analyse de l’utilisation et la configuration distante ; ces services sont décrits ci-dessous.
@@ -142,6 +142,9 @@
      <p>
       Vous partagez les fichiers à l’aide du menu de partage système et choisissez le destinataire et l’emplacement. Les copies enregistrées dans Fichiers, iCloud Drive ou d’autres services sont indépendantes de la synchronisation dans l’app et restent hors de son contrôle. Supprimer des données dans l’app ne supprime pas ces copies.
      </p>
+     <p>
+      L’export ordinaire du projet et la sauvegarde complète décrits ci-dessus n’utilisent pas le filtrage du rapport de diagnostic. Le périmètre distinct des données de signalement d’un problème à partir de la version 1.3.0 est décrit dans <a href="#support-data">Contacter le support</a>.
+     </p>
     </section>
     <h2>
      Finalités du traitement des données
@@ -162,13 +165,52 @@
      Contacter le support
     </h2>
     <p>
-     Vous envoyez vous-même les demandes de support par e-mail ou via le partage système. L’ajout des données du projet est désactivé par défaut. Lorsqu’il est activé, la pièce jointe contient le projet complet, votre description du problème, des informations sur l’appareil et l’app, et des données de diagnostic sur son fonctionnement. Sans pièce jointe de projet, le message contient toujours des informations techniques utiles à la résolution du problème.
+     La description suivante des rapports de diagnostic s’applique à la fonction de signalement d’un problème à partir de la version 1.3.0. Dans les versions antérieures, un rapport peut contenir davantage de données, notamment le projet complet et les prix. Nous recommandons de mettre l’app à jour avant de partager des données.
     </p>
     <p>
-     Les données de diagnostic et les pièces jointes ne sont pas entièrement anonymisées automatiquement. Elles peuvent contenir des informations du projet et d’autres données confidentielles. Vérifiez le message et les pièces jointes avant l’envoi et retirez les données inutiles à la résolution du problème.
+     L’ajout des données de diagnostic du projet est facultatif et désactivé par défaut. Sans activation, nous ne joignons ni la configuration du projet, ni les définitions de bibliothèque dont il dépend, ni les réglages de prix. La demande peut toujours inclure votre description du problème, la version et le numéro de build de l’app, le modèle de l’appareil, la version du système, la date et l’heure de création du rapport ainsi que le contexte de l’écran ou de récupération après un plantage. Le modèle de l’appareil désigne le type de matériel, pas un identifiant permanent de l’appareil.
+    </p>
+    <h3 id="support-diagnostic-scope">
+     Données contenues dans le rapport
+    </h3>
+    <p>
+     Lorsque vous activez l’ajout des données de diagnostic du projet, le rapport contient la configuration technique du meuble ou de la cuisine : dimensions, géométrie, murs, pentes, modules, séparations, façades, appareils, équipements et réglages de construction et de production. Il comprend également les définitions des matériaux et de la quincaillerie utilisés ainsi que leurs dépendances, y compris les éléments de votre bibliothèque personnalisée. Il ne comprend pas toute la bibliothèque ni le contenu d’autres projets sans rapport.
     </p>
     <p>
-     L’app n’envoie pas automatiquement de demande de support : vous décidez de l’envoyer. La correspondance comprend l’adresse de l’expéditeur, les contenus transmis et les pièces jointes. Nous l’utilisons pour traiter la demande.
+     Le rapport ne contient ni fiches clients, ni liens vers des clients, ni profil d’entreprise. Le nom original du projet, les notes, descriptions et autres champs de texte libre du projet sont omis ou remplacés par des valeurs neutres ; cela vaut aussi pour les noms personnalisés de matériaux et d’équipements. Nous ne joignons pas de photos, de textures privées, de modèles externes, de chemins de fichiers, de données de synchronisation ni de journaux d’autres projets.
+    </p>
+    <h3 id="support-pricing">
+     Prix de test et données de chiffrage facultatives
+    </h3>
+    <p>
+     Lorsque les données de diagnostic du projet sont jointes, vos prix réels des matériaux, de la quincaillerie, des équipements et des opérations, vos tarifs de main-d’œuvre, vos marges et les montants des postes personnalisés du chiffrage ne sont pas partagés par défaut. Dans la copie de diagnostic, ils sont remplacés par des valeurs de test fictives. Cela concerne aussi les prix des variantes, les informations de prix imbriquées et les copies enregistrées des paramètres des éléments utilisés.
+    </p>
+    <p>
+     Les valeurs de test suivent des règles fixes adaptées à la catégorie de l’élément et à l’unité de calcul. Elles sont indépendantes de vos montants réels : elles ne sont ni un pourcentage ni une modification de ceux-ci. Le rapport peut conserver la devise du projet et les méthodes de calcul. Les calculs fondés sur des prix de test ne représentent pas votre chiffrage ni votre offre réels.
+    </p>
+    <p>
+     Les données réelles de chiffrage ne sont jointes que si vous activez séparément l’option d’inclusion des données de chiffrage (prix et tarifs), disponible après avoir choisi les données de diagnostic du projet. Elle est désactivée par défaut. Elle couvre les prix et tarifs utilisés dans le projet, la main-d’œuvre, la marge, les postes personnalisés et les réglages de calcul. Elle ne rétablit ni les données clients exclues ni les textes originaux. Désactiver les données du projet désactive aussi l’inclusion des données réelles de chiffrage.
+    </p>
+    <p>
+     Les valeurs de test facilitent l’analyse du fonctionnement du projet, des calculs et de la génération de documents, mais peuvent empêcher de reproduire un problème lié à des montants précis, à des arrondis ou à des prix manquants. Pour ce type de problème, vous pouvez choisir de joindre les données réelles de chiffrage. Le rapport distingue les valeurs de test des données de prix réelles.
+    </p>
+    <h3 id="support-delivery">
+     Envoi et utilisation de la demande
+    </h3>
+    <p>
+     Le rapport JSON est préparé sur votre appareil à partir d’une copie de diagnostic distincte. Le remplacement des prix par des valeurs de test et le filtrage des données ne modifient ni votre projet original, ni votre bibliothèque, ni vos réglages de prix. Ce n’est qu’après avoir choisi de contacter le support que l’app ouvre un e-mail ou le partage système avec la pièce jointe. Vous pouvez annuler l’envoi. Activer une option ne transmet aucune donnée à lui seul ; le rapport n’est pas envoyé automatiquement à Firebase.
+    </p>
+    <p>
+     Le responsable du traitement de l’app reçoit la demande. La correspondance comprend l’adresse de l’expéditeur, le texte saisi et les pièces jointes transmises. Nous les utilisons pour traiter la demande, reproduire le problème et vérifier une correction, pas pour publier le projet ni à des fins marketing. La boîte de contact utilise Gmail (Google) ; vos fournisseurs de messagerie ou de partage traitent également le message et les fichiers.
+    </p>
+    <h3 id="support-filtering-limits">
+     Limites du filtrage des données
+    </h3>
+    <p>
+     Le rapport n’est pas garanti anonyme. Il conserve l’identifiant technique du projet et les identifiants des éléments nécessaires pour reproduire leurs relations. La configuration du meuble ou de la cuisine peut elle-même être confidentielle.
+    </p>
+    <p>
+     Le filtrage automatique s’applique aux données du projet et à ses dépendances dans le rapport de diagnostic. Il ne supprime pas les informations saisies dans votre description du problème ni le contenu des captures, enregistrements, PDF, CSV, exports ordinaires de projets ou sauvegardes ajoutés manuellement. Vérifiez-les avant l’envoi et ne partagez que les informations nécessaires à l’explication du problème. Le rapport de diagnostic ne remplace ni un export ordinaire ni une sauvegarde.
     </p>
     <h2 id="firebase">
      Diagnostic, analyse et configuration distante Firebase
@@ -238,7 +280,13 @@
       « Effacer les données » supprime les données locales de l’app, mais pas celles d’iCloud. Les données conservées dans le cloud peuvent réapparaître lorsque vous réactivez la synchronisation. Cette fonction ne supprime pas non plus les fichiers précédemment enregistrés ou envoyés hors de l’app.
      </p>
      <p>
-      Les messages et pièces jointes envoyés au support ne relèvent pas de l’effacement local des données. Contactez-nous au sujet de leur conservation ou suppression. Les durées de conservation de Firebase dépendent du service et des réglages du projet Firebase ; supprimer un projet de meuble dans l’app ne constitue pas une demande de suppression des données de diagnostic ou d’analyse.
+      Les fichiers temporaires préparés pour une demande sont supprimés à la fin ou à l’annulation du partage ainsi qu’à la fermeture du formulaire. Les fichiers laissés après une interruption de l’app et datant de plus de 24 heures sont supprimés lors de la préparation suivante d’un fichier. Cela ne supprime pas les copies conservées dans les e-mails, Fichiers ou d’autres services.
+     </p>
+     <p>
+      Les messages et pièces jointes déjà envoyés au support ne relèvent pas de l’effacement local. Nous conservons les pièces jointes de diagnostic reçues et leurs copies de travail le temps nécessaire au traitement de la demande, à la reproduction du problème et à la vérification d’une correction, puis les supprimons dès qu’elles ne sont plus nécessaires à ces fins. Nous conservons la correspondance le temps nécessaire au traitement de l’affaire. Toute conservation prolongée est limitée aux données et à la durée nécessaires au respect d’une obligation légale ou à la constatation, à l’exercice ou à la défense de droits en justice, si un tel besoin se présente. Pour toute question sur la conservation ou la suppression, utilisez l’adresse de contact de cette page.
+     </p>
+     <p>
+      Les durées de conservation de Firebase dépendent du service et des réglages du projet Firebase ; supprimer un projet de meuble dans l’app ne constitue pas une demande de suppression des données de diagnostic ou d’analyse.
      </p>
     </section>
     <h2>
@@ -284,6 +332,14 @@
      <span class="history-label">
       Documents pour les versions antérieures :
      </span>
+     <a href="../../archive/2026-10-07/fr/terms-of-use/">
+      Conditions d’utilisation avant 1.3.0 — 7 octobre 2026
+     </a>
+     ·
+     <a href="../../archive/2026-10-07/fr/privacy-policy/">
+      Politique de confidentialité avant 1.3.0 — 7 octobre 2026
+     </a>
+     ·
      <a href="../../archive/2026-06-14/fr/privacy-policy/">
       Politique de confidentialité
      </a>

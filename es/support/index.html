@@ -25,7 +25,7 @@
   <link href="https://furnitureplannerapp.github.io/fr/support/" hreflang="fr" rel="alternate"/>
   <link href="https://furnitureplannerapp.github.io/support/" hreflang="x-default" rel="alternate"/>
  </head>
- <body class="document-page" data-document-updated="2026-10-07">
+ <body class="document-page" data-document-updated="2026-10-22">
   <a class="skip-link" href="#content">
    Ir al contenido
   </a>
@@ -57,7 +57,7 @@
      ¿Cómo podemos ayudar?
     </h1>
     <p class="document-meta">
-     Actualizado: <time datetime="2026-10-07">7 de octubre de 2026</time>
+     Actualizado: <time datetime="2026-10-22">22 de octubre de 2026</time>
     </p>
     <p class="lead">
      Ayuda con proyectos de muebles y cocinas, Live 3D, corte de tableros, presupuestos, PDF/CSV, suscripciones y sincronización con iCloud.
@@ -100,22 +100,63 @@
     <p>
      Una captura de pantalla o una grabación breve resulta útil. Adjunta un archivo de proyecto, datos de diagnóstico o documentos PDF/CSV solo cuando estén disponibles y sean necesarios para explicar el problema. Para problemas de corte, indica el material, el formato del tablero, el ancho de corte y si se completaron los cálculos.
     </p>
+    <h2 id="project-diagnostics">
+     Informar de problemas desde la versión 1.3.0
+    </h2>
     <p>
-     Tú envías las solicitudes de soporte por correo o mediante las opciones de compartir del sistema. Adjuntar datos del proyecto está desactivado por defecto. Al activarlo, el adjunto contiene el proyecto completo, la descripción del problema, información del dispositivo y la app, y datos de diagnóstico sobre su funcionamiento. Sin adjuntar el proyecto, el mensaje sigue incluyendo información técnica útil para resolver el problema.
+     Abre la función para informar de un problema desde el resumen del proyecto o la pantalla de presupuesto. Puedes contactar con soporte sin adjuntar el proyecto. Incluir datos de diagnóstico del proyecto es opcional y está desactivado por defecto.
     </p>
     <p>
-     Los datos de diagnóstico y los adjuntos no se anonimizan automáticamente en su totalidad. Pueden contener información del proyecto y otros datos confidenciales. Revisa el mensaje y los adjuntos antes de enviarlos y elimina los datos que no sean necesarios para resolver el problema.
+     Al activarlo, el informe incluye la configuración técnica del mueble o la cocina y las definiciones de los materiales y el equipamiento utilizados, también los personalizados. No incluye registros de clientes, vínculos con clientes ni el perfil de empresa. Los nombres del proyecto y de sus elementos, las notas y otros textos libres del proyecto se omiten o neutralizan. No se adjuntan fotos, texturas privadas ni modelos externos.
     </p>
     <p>
-     <strong>
-      Elimina los datos de clientes y otra información confidencial que no sea necesaria para reproducir el problema.
-     </strong>
-     No envíes contraseñas ni datos completos de tarjetas.
+     <strong>Por defecto, el proyecto de diagnóstico adjunto contiene precios, tarifas de mano de obra y márgenes de prueba ficticios en lugar de tus importes reales.</strong> Los valores siguen reglas fijas adecuadas al tipo de elemento y a la unidad de cálculo y son independientes de tus precios. La sustitución solo afecta a la copia de diagnóstico, no al proyecto ni a la biblioteca de tu dispositivo.
+    </p>
+    <p>
+     Si el problema afecta a tu presupuesto real, puedes activar por separado los datos del presupuesto (precios y tarifas). Esta opción está desactivada por defecto y solo está disponible junto con los datos de diagnóstico del proyecto. Incluye tus precios, tarifas, costes de mano de obra, márgenes e importes reales de partidas personalizadas, pero no recupera los datos de clientes ni los textos originales excluidos. Desactivar los datos del proyecto también desactiva la inclusión de los datos reales del presupuesto.
+    </p>
+    <p>
+     Los valores de prueba ayudan al diagnóstico, pero pueden impedir reproducir un error que dependa de importes concretos, redondeos o precios que falten. Un presupuesto basado en valores de prueba no es tu presupuesto real y no debe utilizarse para preparar una oferta a un cliente ni para pedir materiales.
+    </p>
+    <p>
+     Al elegir contactar con soporte, la app prepara el informe y abre un correo con el adjunto JSON o las opciones de compartir del sistema. En este último caso, elige una app que admita archivos. Nada se envía automáticamente: puedes revisar el mensaje y cancelar el envío. Si falla la preparación del adjunto, la app muestra un error en vez de omitir el archivo sin avisar.
+    </p>
+    <p>
+     <strong>El filtrado afecta al informe de diagnóstico, no al texto de tu mensaje ni a los archivos añadidos manualmente.</strong> Revisa las capturas, grabaciones, PDF/CSV y exportaciones normales antes de enviarlos. No incluyas datos de clientes innecesarios, contraseñas ni datos completos de tarjetas. El informe conserva identificadores técnicos y la configuración puede ser confidencial: no se garantiza que el adjunto sea anónimo.
+    </p>
+    <p>
+     El informe de diagnóstico no es una copia de seguridad completa. La ausencia de nombres originales, texturas privadas o definiciones de biblioteca que ya no existan puede limitar la reproducción de algunos problemas. En versiones anteriores, el informe puede incluir el proyecto completo y los precios; recomendamos actualizar antes de enviarlo.
+    </p>
+    <p>
+     La <a href="../privacy-policy/#support-data">política de privacidad</a> explica el alcance de los datos, el uso de las solicitudes y las reglas de conservación.
     </p>
     <section id="faq">
      <h2>
       Preguntas frecuentes
      </h2>
+     <details class="faq-item" id="diagnostic-test-prices">
+      <summary>
+       ¿Por qué pueden diferir los precios del informe de diagnóstico y los de mi proyecto?
+      </summary>
+      <div>
+       <p>
+        Si no eliges incluir los datos reales del presupuesto, la copia de diagnóstico utiliza valores de prueba ficticios para no compartir tus precios, tarifas y márgenes. Tu proyecto original y tu biblioteca no cambian. Los importes de prueba sirven para investigar problemas, no para preparar una oferta ni pedir materiales. Cuando el problema depende de importes concretos, puedes decidir incluir los datos reales del presupuesto.
+       </p>
+      </div>
+     </details>
+     <details class="faq-item" id="diagnostic-attachment">
+      <summary>
+       ¿Qué hago si no puedo adjuntar o enviar el informe de diagnóstico?
+      </summary>
+      <div>
+       <p>
+        Si la app muestra un error de preparación, anota el mensaje o haz una captura. Un informe especialmente grande o complejo puede superar los límites de diagnóstico. Puedes desactivar los datos del proyecto y enviar solo la descripción del problema: no necesitas sustituir el informe por una copia de seguridad completa.
+       </p>
+       <p>
+        Si las opciones de compartir no transfieren el archivo, elige otra app compatible con adjuntos o guarda el archivo en Archivos y adjúntalo manualmente a un correo. Tu proveedor de correo puede tener su propio límite de tamaño. Abrir un correo o la pantalla de compartir no confirma la entrega.
+       </p>
+      </div>
+     </details>
      <details class="faq-item" id="version-120-availability">
       <summary>
        ¿Por qué no veo Cocina, Visual o el corte de tableros?
@@ -322,6 +363,14 @@
      <span class="history-label">
       Documentos para versiones anteriores:
      </span>
+     <a href="../../archive/2026-10-07/es/terms-of-use/">
+      Condiciones de uso anteriores a 1.3.0 — 7 de octubre de 2026
+     </a>
+     ·
+     <a href="../../archive/2026-10-07/es/privacy-policy/">
+      Política de privacidad anterior a 1.3.0 — 7 de octubre de 2026
+     </a>
+     ·
      <a href="../../archive/2026-06-14/es/privacy-policy/">
       Política de privacidad
      </a>

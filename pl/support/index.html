@@ -25,7 +25,7 @@
   <link href="https://furnitureplannerapp.github.io/fr/support/" hreflang="fr" rel="alternate"/>
   <link href="https://furnitureplannerapp.github.io/support/" hreflang="x-default" rel="alternate"/>
  </head>
- <body class="document-page" data-document-updated="2026-10-07">
+ <body class="document-page" data-document-updated="2026-10-22">
   <a class="skip-link" href="#content">
    Przejdź do treści
   </a>
@@ -57,7 +57,7 @@
      Jak możemy pomóc?
     </h1>
     <p class="document-meta">
-     Aktualizacja: <time datetime="2026-10-07">7 października 2026</time>
+     Aktualizacja: <time datetime="2026-10-22">22 października 2026</time>
     </p>
     <p class="lead">
      Pomoc z projektami mebli i kuchni, Live 3D, rozkrojem, kosztorysami, PDF/CSV, subskrypcjami oraz synchronizacją iCloud.
@@ -100,22 +100,63 @@
     <p>
      Pomocny będzie zrzut ekranu lub krótkie nagranie. Plik projektu, dane diagnostyczne i dokumenty PDF/CSV dołączaj tylko wtedy, gdy są dostępne i potrzebne do wyjaśnienia problemu. Przy rozkroju podaj materiał, format arkusza, ustawienia rzazu i informację, czy obliczenia zostały ukończone.
     </p>
+    <h2 id="project-diagnostics">
+     Zgłaszanie problemów od wersji 1.3.0
+    </h2>
     <p>
-     Zgłoszenie do pomocy technicznej wysyłasz samodzielnie przez pocztę lub systemowe udostępnianie. Dołączanie danych projektu jest domyślnie wyłączone. Po jego włączeniu załącznik zawiera pełny projekt, opis problemu, informacje o urządzeniu i aplikacji oraz dane diagnostyczne dotyczące jej działania. Bez załącznika projektu wiadomość nadal zawiera informacje techniczne pomocne przy diagnozie.
+     W podsumowaniu projektu lub na ekranie kosztorysu otwórz „Zgłoś problem”. Możesz skontaktować się z pomocą techniczną bez dołączania projektu. Opcja „Dołącz dane diagnostyczne projektu” jest dobrowolna i domyślnie wyłączona.
     </p>
     <p>
-     Dane diagnostyczne i załączniki nie są w całości automatycznie anonimizowane. Mogą zawierać treść projektu i inne poufne informacje. Przed wysłaniem sprawdź wiadomość i załączniki oraz usuń dane niepotrzebne do rozwiązania problemu.
+     Po jej włączeniu raport obejmuje konfigurację techniczną mebla lub kuchni oraz definicje użytych materiałów i wyposażenia, także własnych. Nie dołącza kartoteki klientów, powiązań z klientami ani profilu firmy. Nazwy projektu i elementów, notatki oraz inne swobodne teksty projektu są pomijane lub neutralizowane. Zdjęcia, prywatne tekstury i zewnętrzne modele nie są dołączane.
     </p>
     <p>
-     <strong>
-      Przed wysłaniem usuń dane klientów i inne poufne informacje, które nie są potrzebne do odtworzenia problemu.
-     </strong>
-     Nie wysyłaj haseł ani pełnych danych karty płatniczej.
+     <strong>Domyślnie dołączony projekt diagnostyczny zawiera fikcyjne ceny, stawki robocizny i marże zamiast Twoich rzeczywistych kwot.</strong> Wartości są ustalane według stałych reguł odpowiednich dla rodzaju elementu i jednostki rozliczeniowej, niezależnie od Twoich cen. Podmiana dotyczy wyłącznie kopii diagnostycznej, nie projektu ani biblioteki na urządzeniu.
+    </p>
+    <p>
+     Przy problemie dotyczącym rzeczywistej wyceny możesz osobno włączyć „Dołącz dane kosztorysowe (ceny i stawki)”. Opcja jest domyślnie wyłączona i dostępna tylko razem z danymi diagnostycznymi projektu. Obejmuje Twoje rzeczywiste ceny, stawki, robociznę, marże i wartości własnych pozycji kosztorysu, ale nie przywraca pominiętych danych klientów ani oryginalnych tekstów. Wyłączenie dołączania danych projektu wyłącza także dołączanie rzeczywistych danych kosztorysowych.
+    </p>
+    <p>
+     Wartości testowe ułatwiają diagnostykę, ale mogą uniemożliwić odtworzenie błędu zależnego od konkretnych kwot, zaokrągleń lub brakujących cen. Kosztorys oparty na wartościach testowych nie jest Twoją rzeczywistą wyceną i nie powinien służyć do przygotowania oferty dla klienta ani zamówienia materiałów.
+    </p>
+    <p>
+     Po wybraniu kontaktu aplikacja przygotuje raport i otworzy wiadomość e-mail z załącznikiem JSON albo systemowe udostępnianie. W drugim przypadku wybierz aplikację obsługującą pliki. Zgłoszenie nie jest wysyłane automatycznie — możesz sprawdzić wiadomość i zrezygnować z wysłania. Jeśli przygotowanie załącznika się nie powiedzie, aplikacja pokaże błąd zamiast po cichu pominąć plik.
+    </p>
+    <p>
+     <strong>Filtrowanie obejmuje raport diagnostyczny, a nie treść wpisanej wiadomości ani ręcznie dodane pliki.</strong> Sprawdź zrzuty ekranu, nagrania, PDF/CSV i zwykłe eksporty przed wysłaniem. Nie dołączaj zbędnych danych klientów, haseł ani pełnych danych karty płatniczej. Raport zachowuje techniczne identyfikatory, a konfiguracja projektu może być poufna — nie należy traktować załącznika jako w pełni anonimowego.
+    </p>
+    <p>
+     Raport diagnostyczny nie jest pełną kopią zapasową. Brak oryginalnych etykiet, prywatnych tekstur lub nieistniejących już definicji biblioteki może ograniczyć odtworzenie niektórych problemów. W starszych wersjach aplikacji raport może zawierać pełny projekt i ceny; przed wysłaniem zalecamy aktualizację.
+    </p>
+    <p>
+     Szczegółowy zakres danych, sposób wykorzystania zgłoszeń i zasady przechowywania opisuje <a href="../privacy-policy/#support-data">polityka prywatności</a>.
     </p>
     <section id="faq">
      <h2>
       Najczęstsze pytania
      </h2>
+     <details class="faq-item" id="diagnostic-test-prices">
+      <summary>
+       Dlaczego ceny w raporcie diagnostycznym mogą różnić się od cen w moim projekcie?
+      </summary>
+      <div>
+       <p>
+        Jeżeli nie wybierzesz dołączenia rzeczywistych danych kosztorysowych, kopia diagnostyczna korzysta z fikcyjnych wartości testowych, aby nie udostępniać Twoich cen, stawek i marż. Oryginalny projekt i biblioteka pozostają bez zmian. Kwoty testowe służą do sprawdzania działania aplikacji, nie do przygotowania oferty ani zamówienia materiałów. Gdy problem zależy od konkretnych kwot, możesz zdecydować o dołączeniu rzeczywistych danych kosztorysowych.
+       </p>
+      </div>
+     </details>
+     <details class="faq-item" id="diagnostic-attachment">
+      <summary>
+       Co zrobić, gdy nie mogę dołączyć lub wysłać raportu diagnostycznego?
+      </summary>
+      <div>
+       <p>
+        Jeśli aplikacja wyświetla błąd przygotowania, zapisz jego treść lub zrób zrzut ekranu. Bardzo duży albo zbyt złożony raport może przekraczać limity diagnostyki. Możesz wyłączyć dołączanie danych projektu i wysłać sam opis problemu — nie musisz zastępować raportu pełną kopią zapasową.
+       </p>
+       <p>
+        Jeśli arkusz udostępniania nie przenosi pliku, wybierz inną aplikację obsługującą załączniki lub zapisz plik w Plikach i dołącz go ręcznie do wiadomości. Dostawca poczty może mieć własny limit rozmiaru. Otwarcie wiadomości lub arkusza udostępniania nie potwierdza jej dostarczenia.
+       </p>
+      </div>
+     </details>
      <details class="faq-item" id="version-120-availability">
       <summary>
        Dlaczego nie widzę Kuchni, planu Visual lub rozkroju?
@@ -322,6 +363,14 @@
      <span class="history-label">
       Dokumenty dla wcześniejszych wersji:
      </span>
+     <a href="../../archive/2026-10-07/pl/terms-of-use/">
+      Warunki korzystania przed 1.3.0 — 7 października 2026
+     </a>
+     ·
+     <a href="../../archive/2026-10-07/pl/privacy-policy/">
+      Polityka prywatności przed 1.3.0 — 7 października 2026
+     </a>
+     ·
      <a href="../../archive/2026-06-14/pl/privacy-policy/">
       Polityka prywatności
      </a>

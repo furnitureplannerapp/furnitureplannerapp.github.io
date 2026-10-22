@@ -25,7 +25,7 @@
   <link href="https://furnitureplannerapp.github.io/fr/support/" hreflang="fr" rel="alternate"/>
   <link href="https://furnitureplannerapp.github.io/support/" hreflang="x-default" rel="alternate"/>
  </head>
- <body class="document-page" data-document-updated="2026-10-07">
+ <body class="document-page" data-document-updated="2026-10-22">
   <a class="skip-link" href="#content">
    Aller au contenu
   </a>
@@ -57,7 +57,7 @@
      Comment pouvons-nous aider ?
     </h1>
     <p class="document-meta">
-     Mise à jour: <time datetime="2026-10-07">7 octobre 2026</time>
+     Mise à jour: <time datetime="2026-10-22">22 octobre 2026</time>
     </p>
     <p class="lead">
      Aide pour les projets de meubles et de cuisines, Live 3D, découpe de panneaux, devis, PDF/CSV, abonnements et synchronisation iCloud.
@@ -100,22 +100,63 @@
     <p>
      Une capture d’écran ou un court enregistrement est utile. Joignez un fichier de projet, des données de diagnostic ou des documents PDF/CSV uniquement s’ils sont disponibles et nécessaires pour expliquer le problème. Pour les problèmes de découpe, précisez le matériau, le format du panneau, la largeur de coupe et si les calculs sont terminés.
     </p>
+    <h2 id="project-diagnostics">
+     Signaler un problème à partir de la version 1.3.0
+    </h2>
     <p>
-     Vous envoyez vous-même les demandes de support par e-mail ou via le partage système. L’ajout des données du projet est désactivé par défaut. Lorsqu’il est activé, la pièce jointe contient le projet complet, votre description du problème, des informations sur l’appareil et l’app, et des données de diagnostic sur son fonctionnement. Sans pièce jointe de projet, le message contient toujours des informations techniques utiles à la résolution du problème.
+     Ouvrez le signalement d’un problème depuis le récapitulatif du projet ou l’écran de chiffrage. Vous pouvez contacter le support sans joindre le projet. L’ajout des données de diagnostic du projet est facultatif et désactivé par défaut.
     </p>
     <p>
-     Les données de diagnostic et les pièces jointes ne sont pas entièrement anonymisées automatiquement. Elles peuvent contenir des informations du projet et d’autres données confidentielles. Vérifiez le message et les pièces jointes avant l’envoi et retirez les données inutiles à la résolution du problème.
+     Lorsqu’il est activé, le rapport comprend la configuration technique du meuble ou de la cuisine et les définitions des matériaux et équipements utilisés, y compris les éléments personnalisés. Il ne contient ni fiches clients, ni liens vers des clients, ni profil d’entreprise. Les noms du projet et des éléments, les notes et autres textes libres du projet sont omis ou neutralisés. Les photos, textures privées et modèles externes ne sont pas joints.
     </p>
     <p>
-     <strong>
-      Supprimez les données clients et autres informations confidentielles inutiles à la reproduction du problème.
-     </strong>
-     N’envoyez aucun mot de passe ni numéro de carte complet.
+     <strong>Par défaut, le projet de diagnostic joint contient des prix, tarifs de main-d’œuvre et marges de test fictifs à la place de vos montants réels.</strong> Les valeurs suivent des règles fixes adaptées au type d’élément et à l’unité de calcul et sont indépendantes de vos prix. Le remplacement concerne uniquement la copie de diagnostic, pas le projet ni la bibliothèque sur votre appareil.
+    </p>
+    <p>
+     Pour un problème concernant votre chiffrage réel, vous pouvez activer séparément les données de chiffrage (prix et tarifs). Cette option est désactivée par défaut et disponible uniquement avec les données de diagnostic du projet. Elle inclut vos prix, tarifs, coûts de main-d’œuvre, marges et montants réels des postes personnalisés, mais ne rétablit ni les données clients exclues ni les textes originaux. Désactiver les données du projet désactive aussi l’inclusion des données réelles de chiffrage.
+    </p>
+    <p>
+     Les valeurs de test facilitent le diagnostic, mais peuvent empêcher de reproduire un problème lié à des montants précis, à des arrondis ou à des prix manquants. Un chiffrage fondé sur des valeurs de test n’est pas votre chiffrage réel et ne doit pas servir à préparer une offre à un client ni à commander des matériaux.
+    </p>
+    <p>
+     Lorsque vous choisissez de contacter le support, l’app prépare le rapport et ouvre un e-mail avec la pièce jointe JSON ou le partage système. Dans ce dernier cas, choisissez une app prenant en charge les fichiers. Rien n’est envoyé automatiquement : vous pouvez vérifier le message et annuler l’envoi. Si la préparation de la pièce jointe échoue, l’app affiche une erreur au lieu d’omettre le fichier sans prévenir.
+    </p>
+    <p>
+     <strong>Le filtrage concerne le rapport de diagnostic, pas le texte de votre message ni les fichiers ajoutés manuellement.</strong> Vérifiez les captures, enregistrements, PDF/CSV et exports ordinaires avant l’envoi. N’ajoutez pas de données clients inutiles, de mots de passe ni de numéros de carte complets. Le rapport conserve des identifiants techniques et la configuration du projet peut être confidentielle : la pièce jointe n’est pas garantie anonyme.
+    </p>
+    <p>
+     Le rapport de diagnostic n’est pas une sauvegarde complète. L’absence de libellés originaux, de textures privées ou de définitions de bibliothèque qui n’existent plus peut limiter la reproduction de certains problèmes. Dans les anciennes versions, un rapport peut inclure le projet complet et les prix ; nous recommandons une mise à jour avant l’envoi.
+    </p>
+    <p>
+     La <a href="../privacy-policy/#support-data">politique de confidentialité</a> détaille les données, l’utilisation des demandes et les règles de conservation.
     </p>
     <section id="faq">
      <h2>
       Questions fréquentes
      </h2>
+     <details class="faq-item" id="diagnostic-test-prices">
+      <summary>
+       Pourquoi les prix du rapport de diagnostic peuvent-ils différer de ceux de mon projet ?
+      </summary>
+      <div>
+       <p>
+        Si vous ne choisissez pas de joindre les données réelles de chiffrage, la copie de diagnostic utilise des valeurs de test fictives afin de ne pas partager vos prix, tarifs et marges. Votre projet original et votre bibliothèque restent inchangés. Les montants de test servent à analyser les problèmes, pas à préparer une offre ni à commander des matériaux. Lorsque le problème dépend de montants précis, vous pouvez choisir de joindre les données réelles de chiffrage.
+       </p>
+      </div>
+     </details>
+     <details class="faq-item" id="diagnostic-attachment">
+      <summary>
+       Que faire si je ne peux pas joindre ou envoyer le rapport de diagnostic ?
+      </summary>
+      <div>
+       <p>
+        Si l’app affiche une erreur de préparation, notez le message ou faites une capture. Un rapport particulièrement volumineux ou complexe peut dépasser les limites du diagnostic. Vous pouvez désactiver les données du projet et envoyer uniquement la description du problème : il n’est pas nécessaire de remplacer le rapport par une sauvegarde complète.
+       </p>
+       <p>
+        Si le partage ne transmet pas le fichier, choisissez une autre app compatible avec les pièces jointes ou enregistrez le fichier dans Fichiers et joignez-le manuellement à un e-mail. Votre fournisseur de messagerie peut appliquer sa propre limite de taille. L’ouverture d’un e-mail ou du partage système ne confirme pas la livraison.
+       </p>
+      </div>
+     </details>
      <details class="faq-item" id="version-120-availability">
       <summary>
        Pourquoi ne vois-je pas Cuisine, Visual ou la découpe de panneaux ?
@@ -322,6 +363,14 @@
      <span class="history-label">
       Documents pour les versions antérieures :
      </span>
+     <a href="../../archive/2026-10-07/fr/terms-of-use/">
+      Conditions d’utilisation avant 1.3.0 — 7 octobre 2026
+     </a>
+     ·
+     <a href="../../archive/2026-10-07/fr/privacy-policy/">
+      Politique de confidentialité avant 1.3.0 — 7 octobre 2026
+     </a>
+     ·
      <a href="../../archive/2026-06-14/fr/privacy-policy/">
       Politique de confidentialité
      </a>
